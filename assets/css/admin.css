@@ -1,0 +1,1035 @@
+/*==================================================
+=            BCOB Forms Variables START            =
+==================================================*/
+
+:root {
+  --bcob-primary: #2271b1;
+  --bcob-primary-hover: #135e96;
+
+  --bcob-bg: #ffffff;
+
+  --bcob-border: #c3c4c7;
+
+  --bcob-text: #1d2327;
+
+  --bcob-muted: #50575e;
+
+  --bcob-link: #2271b1;
+
+  --bcob-link-hover: #135e96;
+
+  --bcob-status-bg: #f0f0f1;
+
+  --bcob-radius: 4px;
+
+  --bcob-transition: 0.18s;
+
+  --bcob-font:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/*==================================================
+=             BCOB Forms Variables END             =
+==================================================*/
+
+/*==================================================
+=             BCOB Forms Layout START              =
+==================================================*/
+
+.bcob-forms-page {
+  font-family: var(--bcob-font);
+}
+
+.bcob-page-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin: 22px 0 20px;
+}
+
+.bcob-page-header h1 {
+  margin: 0;
+
+  font-size: 32px;
+
+  font-weight: 400;
+
+  color: var(--bcob-text);
+}
+
+.bcob-page-header .page-title-action {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+}
+
+.bcob-page-header .page-title-action i {
+  font-size: 15px;
+}
+
+.bcob-table-wrap {
+  background: #fff;
+
+  border: 1px solid var(--bcob-border);
+
+  border-radius: 4px;
+
+  overflow: hidden;
+}
+
+.bcob-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  table-layout: fixed;
+}
+
+.bcob-table thead th {
+  text-align: left;
+
+  padding: 13px 16px;
+
+  text-transform: uppercase;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  color: #50575e;
+
+  border-bottom: 1px solid var(--bcob-border);
+
+  background: #fff;
+}
+
+.bcob-table tbody td {
+  padding: 6px 12px;
+
+  border-bottom: 1px solid #dcdcde;
+
+  font-size: 14px;
+
+  color: var(--bcob-text);
+
+  vertical-align: middle;
+}
+
+.bcob-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.bcob-name a {
+  color: var(--bcob-link);
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.bcob-name a:hover {
+  color: var(--bcob-link-hover);
+}
+
+.bcob-status {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 3px 10px;
+
+  border-radius: 50px;
+
+  background: var(--bcob-status-bg);
+
+  font-size: 12px;
+
+  color: #1d2327;
+
+  text-transform: lowercase;
+}
+
+.bcob-actions-column {
+  width: 120px;
+
+  text-align: right;
+}
+
+.bcob-table td:last-child {
+  text-align: right;
+}
+
+.bcob-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+.bcob-actions a {
+  color: #646970;
+
+  font-size: 18px;
+
+  text-decoration: none;
+
+  transition: var(--bcob-transition);
+}
+
+.bcob-actions a:hover {
+  color: var(--bcob-primary);
+}
+
+.bcob-actions i {
+  display: block;
+}
+
+.bcob-notice {
+  display: none;
+  margin: 16px 0;
+  padding: 12px 16px;
+  border-left: 4px solid;
+  border-radius: 6px;
+}
+
+.bcob-notice.success {
+  background: #ecfdf3;
+  color: #027a48;
+  border-color: #12b76a;
+}
+
+.bcob-notice.error {
+  background: #fef3f2;
+  color: #b42318;
+  border-color: #f04438;
+}
+
+.bcob-shortcode {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: #f6f7f7;
+  border: 1px solid #dcdcde;
+  border-radius: 6px;
+  color: #2271b1;
+  font:
+    600 13px/1.4 Consolas,
+    Monaco,
+    monospace;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.bcob-shortcode i {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.bcob-shortcode:hover {
+  background: #2271b1;
+  border-color: #2271b1;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(34, 113, 177, 0.18);
+  transform: translateY(-1px);
+}
+
+.bcob-shortcode:active {
+  transform: scale(0.98);
+}
+
+.bcob-shortcode.copied {
+  background: #00a32a;
+  border-color: #00a32a;
+  color: #fff;
+}
+
+/*==================================================
+=              BCOB Forms Layout END               =
+==================================================*/
+
+.bcob-page-actions {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+}
+
+#bcob-import-btn,
+#bcob-export-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 18px;
+  height: 38px;
+  border-radius: 0;
+  font-weight: 600;
+}
+
+.page-title-action {
+  min-height: 38px !important;
+  top: 0 !important;
+}
+
+.bcob-export {
+  position: relative;
+}
+
+.bcob-export-menu {
+  position: absolute;
+  top: 46px;
+  right: 0;
+  width: 240px;
+  display: none;
+  background: #fff;
+  border: 1px solid #dcdcde;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  z-index: 999;
+}
+
+.bcob-export-menu.is-open {
+  display: block;
+}
+
+.bcob-export-menu a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  color: #1d2327;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.bcob-export-menu a::after {
+  content: "\ea7b";
+  font-family: "remixicon";
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.bcob-export-menu a:hover {
+  background: #2271b1;
+  color: #fff;
+}
+
+.bcob-export-menu a:hover::after {
+  opacity: 1;
+}
+
+#bcob-loader {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+}
+
+.bcob-loader-card {
+  background: #fff;
+  padding: 28px 36px;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  min-width: 240px;
+}
+
+.bcob-loader-card i {
+  display: block;
+  font-size: 34px;
+  margin-bottom: 12px;
+  color: #2271b1;
+}
+
+.bcob-spin {
+  animation: bcobSpin 0.8s linear infinite;
+}
+
+@keyframes bcobSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Dashboard CSS */
+.bcob-dashboard {
+  max-width: 100%;
+  margin: 25px 20px 40px;
+  color: #1d2327;
+}
+
+.bcob-dashboard .bcob-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 22px;
+}
+
+.bcob-dashboard .bcob-page-header h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.bcob-dashboard .bcob-page-header p {
+  margin: 5px 0 0;
+  color: #646970;
+  font-size: 13px;
+}
+
+.bcob-dashboard .bcob-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bcob-dashboard .bcob-header-actions .button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Stats */
+
+.bcob-dashboard .bcob-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.bcob-dashboard .bcob-card {
+  border: 1px solid #dcdcde;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.bcob-dashboard .stat-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 92px;
+  padding: 16px;
+}
+
+.bcob-dashboard .stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  border-radius: 7px;
+  background: #f0f6fc;
+  color: #2271b1;
+  font-size: 19px;
+}
+
+.bcob-dashboard .stat-content {
+  min-width: 0;
+}
+
+.bcob-dashboard .stat-content span {
+  display: block;
+  margin-bottom: 3px;
+  color: #646970;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.bcob-dashboard .stat-content h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.bcob-dashboard .stat-content small {
+  display: block;
+  margin-top: 3px;
+  color: #8c8f94;
+  font-size: 11px;
+}
+
+/* Dashboard grid */
+
+.bcob-dashboard .bcob-dashboard-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+/* Card headers */
+
+.bcob-dashboard .bcob-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  min-height: 48px;
+  padding: 0 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.bcob-dashboard .bcob-card-header h2 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.bcob-dashboard .bcob-card-header a {
+  color: #2271b1;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.bcob-dashboard .bcob-card-header a:hover {
+  color: #135e96;
+}
+
+/* Quick actions */
+
+.bcob-dashboard .bcob-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding: 14px;
+}
+
+.bcob-dashboard .bcob-actions a {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 42px;
+  padding: 0 11px;
+  border: 1px solid #e2e4e7;
+  border-radius: 6px;
+  color: #2c3338;
+  background: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.bcob-dashboard .bcob-actions a:hover {
+  border-color: #b8c4cc;
+  background: #f8f9fa;
+}
+
+.bcob-dashboard .bcob-actions i {
+  color: #2271b1;
+  font-size: 17px;
+}
+
+/* Recent leads */
+
+.bcob-dashboard .bcob-activity {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bcob-dashboard .bcob-activity li {
+  border-bottom: 1px solid #eee;
+}
+
+.bcob-dashboard .bcob-activity li:last-child {
+  border-bottom: 0;
+}
+
+.bcob-dashboard .bcob-activity li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 54px;
+  padding: 7px 16px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.bcob-dashboard .bcob-activity li a:hover {
+  background: #fafafa;
+}
+
+.bcob-dashboard .bcob-activity li > a > i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f0f6fc;
+  color: #2271b1;
+  font-size: 14px;
+}
+
+.bcob-dashboard .bcob-activity li div {
+  flex: 1;
+  min-width: 0;
+}
+
+.bcob-dashboard .bcob-activity strong {
+  display: block;
+  overflow: hidden;
+  color: #2c3338;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.bcob-dashboard .bcob-activity span {
+  display: block;
+  margin-top: 2px;
+  overflow: hidden;
+  color: #646970;
+  font-size: 11px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.bcob-dashboard .bcob-activity small {
+  flex-shrink: 0;
+  color: #8c8f94;
+  font-size: 10px;
+}
+
+/* Recent payments */
+
+.bcob-dashboard .bcob-dashboard-section {
+  overflow: hidden;
+}
+
+.bcob-dashboard .bcob-payment-list {
+  display: block;
+}
+
+.bcob-dashboard .bcob-payment-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-height: 58px;
+  padding: 8px 16px;
+  border-bottom: 1px solid #eee;
+  color: inherit;
+  text-decoration: none;
+}
+
+.bcob-dashboard .bcob-payment-item:last-child {
+  border-bottom: 0;
+}
+
+.bcob-dashboard .bcob-payment-item:hover {
+  background: #fafafa;
+}
+
+.bcob-dashboard .bcob-payment-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  background: #f6f7f7;
+  color: #646970;
+  font-size: 14px;
+}
+
+.bcob-dashboard .bcob-payment-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.bcob-dashboard .bcob-payment-info strong,
+.bcob-dashboard .bcob-payment-info small {
+  display: block;
+}
+
+.bcob-dashboard .bcob-payment-info strong {
+  overflow: hidden;
+  color: #2c3338;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.bcob-dashboard .bcob-payment-info small {
+  margin-top: 2px;
+  overflow: hidden;
+  color: #646970;
+  font-size: 11px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.bcob-dashboard .bcob-payment-amount {
+  min-width: 110px;
+  text-align: right;
+}
+
+.bcob-dashboard .bcob-payment-amount strong {
+  display: block;
+  color: #2c3338;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.bcob-dashboard .bcob-payment-status {
+  display: inline-block;
+  margin-top: 3px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  background: #f0f0f1;
+  color: #646970;
+  font-size: 10px;
+  line-height: 1.3;
+}
+
+.bcob-dashboard .bcob-payment-status-succeeded,
+.bcob-dashboard .bcob-payment-status-success,
+.bcob-dashboard .bcob-payment-status-completed {
+  background: #edfaef;
+  color: #168544;
+}
+
+.bcob-dashboard .bcob-payment-status-pending,
+.bcob-dashboard .bcob-payment-status-processing {
+  background: #fff8e5;
+  color: #996800;
+}
+
+.bcob-dashboard .bcob-payment-status-failed,
+.bcob-dashboard .bcob-payment-status-error,
+.bcob-dashboard .bcob-payment-status-canceled,
+.bcob-dashboard .bcob-payment-status-cancelled {
+  background: #fcecec;
+  color: #b32d2e;
+}
+
+.bcob-dashboard .bcob-payment-date {
+  flex: 0 0 70px;
+  color: #8c8f94;
+  font-size: 10px;
+  text-align: right;
+}
+
+/* Empty */
+
+.bcob-dashboard .bcob-dashboard-empty {
+  padding: 28px 16px;
+  color: #8c8f94;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .bcob-dashboard .bcob-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bcob-dashboard .bcob-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .bcob-dashboard {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .bcob-dashboard .bcob-page-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .bcob-dashboard .bcob-header-actions {
+    width: 100%;
+  }
+
+  .bcob-dashboard .bcob-header-actions .button {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .bcob-dashboard .bcob-stats-grid,
+  .bcob-dashboard .bcob-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .bcob-dashboard .bcob-payment-date {
+    display: none;
+  }
+
+  .bcob-dashboard .bcob-payment-amount {
+    min-width: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bcob-dashboard .bcob-page-header h1 {
+    font-size: 23px;
+  }
+
+  .bcob-dashboard .bcob-header-actions {
+    flex-direction: column;
+  }
+
+  .bcob-dashboard .bcob-header-actions .button {
+    width: 100%;
+  }
+
+  .bcob-dashboard .stat-card {
+    min-height: 82px;
+  }
+
+  .bcob-dashboard .bcob-payment-item,
+  .bcob-dashboard .bcob-activity li a {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+/* Dashboard CSS Ends */
+
+span.bcob-tracking-event {
+  border: 1px solid #d9d9d9;
+  text-align: center;
+  padding: 5px;
+  border-radius: 50px;
+  background: #f0f0f9;
+  font-weight: 500;
+}
+
+.bcob-remixicon-picker {
+  position: fixed;
+  z-index: 999999;
+  width: 360px;
+  max-height: 420px;
+  background: #fff;
+  border: 1px solid #dcdcde;
+  border-radius: 6px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.bcob-remixicon-picker__search {
+  position: relative;
+  padding: 10px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.bcob-remixicon-picker__search > i {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 2;
+  font-size: 16px;
+  line-height: 1;
+  color: #646970;
+  pointer-events: none;
+}
+
+.bcob-remixicon-picker__input {
+  display: block !important;
+  width: 100% !important;
+  height: 38px !important;
+  margin: 0 !important;
+  padding: 0 12px 0 36px !important;
+  box-sizing: border-box !important;
+
+  border: 1px solid #c3c4c7 !important;
+  border-radius: 4px !important;
+  background: #fff !important;
+  color: #1d2327 !important;
+  font-size: 14px !important;
+  line-height: 38px !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.bcob-remixicon-picker__input:focus {
+  border-color: #2271b1 !important;
+  box-shadow: 0 0 0 1px #2271b1 !important;
+  outline: none !important;
+}
+
+.bcob-remixicon-picker__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  padding: 10px;
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.bcob-remixicon-picker__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  min-height: 65px;
+  padding: 8px 4px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+
+  color: #1d2327;
+  cursor: pointer;
+}
+
+.bcob-remixicon-picker__item:hover {
+  background: #f0f0f1;
+  border-color: #dcdcde;
+}
+
+.bcob-remixicon-picker__item i {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.bcob-remixicon-picker__item span {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 10px;
+  color: #646970;
+}
+
+.bcob-remixicon-picker__empty {
+  grid-column: 1 / -1;
+  padding: 25px;
+  text-align: center;
+  color: #757575;
+}
+
+.password-toggle {
+  padding-right: 45px !important;
+}
+
+.password-toggle-icon {
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: -35px;
+  position: relative;
+  z-index: 2;
+}
+
+.bcob-settings-import-export {
+  margin-left: 10px;
+}
+
+/* Logs CSS */
+
+.bcob-logs-page .tablenav {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.bcob-logs-page .tablenav-pages {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+}
+
+.bcob-logs-page .tablenav-pages .page-numbers {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid var(--bcob-border);
+  border-radius: var(--bcob-radius);
+  background: var(--bcob-bg);
+  color: var(--bcob-text);
+  text-decoration: none;
+  font-family: var(--bcob-font);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  transition:
+    background-color var(--bcob-transition) ease,
+    border-color var(--bcob-transition) ease,
+    color var(--bcob-transition) ease;
+}
+
+.bcob-logs-page .tablenav-pages a.page-numbers:hover {
+  border-color: var(--bcob-primary);
+  background: var(--bcob-status-bg);
+  color: var(--bcob-primary-hover);
+}
+
+.bcob-logs-page .tablenav-pages .page-numbers.current {
+  border-color: var(--bcob-primary);
+  background: var(--bcob-primary);
+  color: #fff;
+  cursor: default;
+}
+
+.bcob-logs-page .tablenav-pages .prev,
+.bcob-logs-page .tablenav-pages .next {
+  color: var(--bcob-link);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.bcob-logs-page .tablenav-pages .prev:hover,
+.bcob-logs-page .tablenav-pages .next:hover {
+  color: var(--bcob-link-hover);
+}
+
+.bcob-logs-page .tablenav-pages .dots {
+  border-color: transparent;
+  background: transparent;
+  color: var(--bcob-muted);
+  pointer-events: none;
+}
+
+@media (max-width: 782px) {
+  .bcob-logs-page .tablenav-pages {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .bcob-logs-page .tablenav-pages .page-numbers {
+    min-width: 34px;
+    height: 34px;
+    padding: 0 8px;
+  }
+}
+
+/* Logs CSS Ends */

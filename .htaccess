@@ -1,0 +1,14 @@
+Options -Indexes
+
+<IfModule mod_authz_core.c>
+    <FilesMatch "^(composer\.(json|lock)|readme\.md|installed\.json|.*\.po|\.gitlab-ci\.yml|tmp-.*\.zip~?)$">
+        Require all denied
+    </FilesMatch>
+</IfModule>
+
+<IfModule !mod_authz_core.c>
+    <FilesMatch "^(composer\.(json|lock)|readme\.md|installed\.json|.*\.po|\.gitlab-ci\.yml|tmp-.*\.zip~?)$">
+        Order allow,deny
+        Deny from all
+    </FilesMatch>
+</IfModule>

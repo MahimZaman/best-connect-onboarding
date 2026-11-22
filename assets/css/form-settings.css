@@ -1,0 +1,566 @@
+/*==================================================
+=            Form Settings
+==================================================*/
+
+.bcob-settings-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 24px;
+  align-items: start;
+  padding: 24px;
+}
+
+.bcob-settings-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bcob-settings-sidebar {
+  position: relative;
+}
+
+.bcob-sticky {
+  position: sticky;
+  top: 20px;
+}
+
+/*==================================================
+=            Cards
+==================================================*/
+
+.bcob-settings-card {
+  background: var(--bcob-surface, #fff);
+  border: 1px solid var(--bcob-border, #dcdcde);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.bcob-settings-card-header {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--bcob-border, #dcdcde);
+  background: #fafafa;
+}
+
+.bcob-settings-card-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1d2327;
+}
+
+.bcob-settings-card-header p {
+  margin: 6px 0 0;
+  color: #646970;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.bcob-settings-card-body {
+  padding: 24px;
+}
+
+/*==================================================
+=            Setting Row
+==================================================*/
+
+.bcob-setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.bcob-setting-label {
+  flex: 1;
+}
+
+.bcob-setting-label label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #1d2327;
+}
+
+.bcob-setting-label span {
+  display: block;
+  font-size: 13px;
+  color: #646970;
+  line-height: 1.5;
+}
+
+/*==================================================
+=            Form
+==================================================*/
+
+.bcob-form-group {
+  margin-bottom: 24px;
+}
+
+.bcob-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #1d2327;
+}
+
+.bcob-contract-preview-toggle {
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+}
+
+.bcob-form-group input[type="text"],
+.bcob-form-group input[type="email"],
+.bcob-form-group input[type="search"] {
+  width: 100%;
+  height: 42px;
+  padding: 0 14px;
+  border: 1px solid var(--bcob-border, #c3c4c7);
+  border-radius: 6px;
+  background: #fff;
+  transition: 0.2s;
+  box-sizing: border-box;
+}
+
+.bcob-form-group input:focus {
+  outline: none;
+  border-color: #2271b1;
+  box-shadow: 0 0 0 1px #2271b1;
+}
+
+/*==================================================
+=            TinyMCE
+==================================================*/
+
+.bcob-form-group .wp-editor-wrap {
+  border: 1px solid var(--bcob-border, #dcdcde);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.bcob-form-group .mce-toolbar-grp {
+  border-bottom: 1px solid var(--bcob-border, #dcdcde) !important;
+}
+
+.bcob-form-group iframe {
+  background: #fff;
+}
+
+/*==================================================
+=            Merge Tags
+==================================================*/
+
+.bcob-merge-section + .bcob-merge-section {
+  margin-top: 28px;
+}
+
+.bcob-merge-section h4 {
+  margin: 0 0 14px;
+  padding-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #50575e;
+  border-bottom: 1px solid var(--bcob-border, #e2e4e7);
+}
+
+.bcob-merge-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bcob-merge-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border: 1px solid #dcdcde;
+  border-radius: 20px;
+  background: #fff;
+  color: #2271b1;
+  font-size: 12px;
+  font-family: monospace;
+  cursor: pointer;
+  transition: 0.18s ease;
+  user-select: none;
+}
+
+.bcob-merge-tag:hover {
+  background: #2271b1;
+  color: #fff;
+  border-color: #2271b1;
+  transform: translateY(-1px);
+}
+
+.bcob-merge-tag:active {
+  transform: scale(0.96);
+}
+
+.bcob-merge-tag:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(34, 113, 177, 0.25);
+}
+
+/*==================================================
+=            Switch
+==================================================*/
+
+.bcob-switch {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 30px;
+}
+
+.bcob-switch input {
+  display: none;
+}
+
+.bcob-slider {
+  position: absolute;
+  inset: 0;
+  background: #c3c4c7;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.bcob-slider:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 3px;
+  top: 3px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.25s;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bcob-switch input:checked + .bcob-slider {
+  background: #2271b1;
+}
+
+.bcob-switch input:checked + .bcob-slider:before {
+  transform: translateX(24px);
+}
+
+/*==================================================
+=            Search
+==================================================*/
+
+#bcob-merge-search {
+  margin-bottom: 18px;
+}
+
+/*==================================================
+=            Scrollbar
+==================================================*/
+
+.bcob-settings-sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.bcob-settings-sidebar::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 20px;
+}
+
+/*==================================================
+=            Responsive
+==================================================*/
+
+@media (max-width: 1200px) {
+  .bcob-settings-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .bcob-sticky {
+    position: static;
+  }
+}
+
+@media (max-width: 782px) {
+  .bcob-settings-wrap {
+    padding: 15px;
+    gap: 18px;
+  }
+
+  .bcob-settings-card-body {
+    padding: 18px;
+  }
+
+  .bcob-settings-card-header {
+    padding: 16px 18px;
+  }
+
+  .bcob-setting-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bcob-switch {
+    margin-top: 6px;
+  }
+}
+
+/* Contract CSS */
+.bcob-contract-pdf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #dcdcde;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.bcob-contract-pdf-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.bcob-contract-pdf-info i {
+  font-size: 32px;
+  color: #dc3232;
+}
+
+.bcob-contract-pdf-info strong {
+  display: block;
+}
+
+.bcob-contract-pdf-info small {
+  color: #777;
+}
+
+.bcob-remove-contract-rule {
+  width: 34px;
+  height: 34px;
+  border: none;
+  background: #fff2f2;
+  color: #dc3232;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.bcob-remove-contract-rule:hover {
+  background: #dc3232;
+  color: #fff;
+}
+
+.bcob-contract-pdf {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) auto;
+  align-items: center;
+  gap: 24px;
+  padding: 18px 20px;
+  border: 1px solid #dcdcde;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.bcob-contract-pdf-info {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+}
+
+.bcob-contract-pdf-info > i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 40px;
+  border-radius: 8px;
+  background: #fff1f1;
+  color: #d63638;
+  font-size: 22px;
+}
+
+.bcob-contract-pdf-info > div {
+  min-width: 0;
+}
+
+.bcob-contract-pdf-name {
+  display: block;
+  margin-bottom: 4px;
+  color: #1d2327;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bcob-contract-pdf-info small {
+  display: block;
+  color: #646970;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.bcob-contract-pdf-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+.bcob-contract-pdf-actions .button {
+  height: 38px;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border-color: #c3c4c7;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: none;
+  font-size: 13px;
+}
+
+.bcob-contract-pdf-actions .bcob-select-contract-pdf {
+  padding: 0 13px;
+}
+
+.bcob-contract-pdf-actions .bcob-map-contract-fields {
+  width: 38px;
+  padding: 0;
+}
+
+.bcob-contract-pdf-actions .bcob-map-contract-fields i {
+  font-size: 16px;
+}
+
+.bcob-contract-preview-toggle {
+  min-width: 116px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 11px 0 12px;
+  border: 1px solid #c3c4c7;
+  border-radius: 7px;
+  background: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.bcob-contract-preview-label {
+  color: #1d2327;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.bcob-contract-preview-toggle .bcob-switch {
+  position: relative;
+  width: 34px;
+  height: 20px;
+  flex: 0 0 34px;
+}
+
+.bcob-contract-preview-toggle .bcob-switch input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.bcob-contract-preview-toggle .bcob-slider {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: #c3c4c7;
+  transition: background 0.18s ease;
+}
+
+.bcob-contract-preview-toggle .bcob-slider::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 3px;
+  top: 3px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+  transition: transform 0.18s ease;
+}
+
+.bcob-contract-preview-toggle input:checked + .bcob-slider {
+  background: #2271b1;
+}
+
+.bcob-contract-preview-toggle input:checked + .bcob-slider::before {
+  transform: translateX(14px);
+}
+
+.bcob-contract-preview-toggle:hover {
+  border-color: #8c8f94;
+}
+
+.bcob-contract-pdf-actions .button:focus-visible,
+.bcob-contract-preview-toggle:has(input:focus-visible) {
+  outline: 2px solid #2271b1;
+  outline-offset: 1px;
+}
+
+.bcob-contract-mapping-status {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -6px;
+}
+
+.bcob-contract-mapping-count {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid #dcdcde;
+  border-radius: 999px;
+  background: #f6f7f7;
+  color: #50575e;
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+select#bcob_form_type {
+  min-width: 150px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .bcob-contract-pdf {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .bcob-contract-pdf-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .bcob-contract-preview-toggle {
+    flex: 1;
+  }
+
+  .bcob-contract-mapping-status {
+    justify-content: flex-start;
+  }
+}
+/* Contract CSS Ends */

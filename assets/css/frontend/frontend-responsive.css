@@ -1,0 +1,103 @@
+@media (max-width: 1400px) {
+  .bcob-form {
+    grid-template-columns: 260px minmax(0, 1fr) 320px;
+
+    gap: 24px;
+
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .bcob-form {
+    grid-template-columns: 260px minmax(0, 1fr) 300px;
+  }
+
+  .bcob-checkbox-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .bcob-form {
+    grid-template-columns: 260px minmax(0, 1fr) 300px;
+  }
+
+  .bcob-checkbox-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  main.bcob-center-column {
+    padding: 40px 24px;
+  }
+
+  .bcob-checkbox-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .bcob-form {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 24px 0;
+
+    gap: 24px;
+  }
+
+  .bcob-left-column,
+  .bcob-right-column {
+    position: static;
+    width: 100%;
+  }
+
+  .bcob-progress {
+    padding: 0;
+  }
+
+  .bcob-step-list {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .width-25,
+  .width-33,
+  .width-50,
+  .width-66,
+  .width-75,
+  .width-100 {
+    width: 100%;
+  }
+
+  .bcob-navigation {
+    flex-direction: row;
+    align-items: stretch;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    z-index: 1000;
+    width: 100%;
+    left: 0;
+    padding: 15px 20px;
+  }
+
+  .bcob-btn {
+    width: auto;
+  }
+
+  .bcob-progress-title {
+    font-size: 22px;
+  }
+
+  .bcob-widget {
+    padding: 18px;
+  }
+
+  .bcob-upload-dropzone {
+    padding: 30px 18px;
+  }
+}
+

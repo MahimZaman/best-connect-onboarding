@@ -1,0 +1,170 @@
+.bcob-progress {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+
+.bcob-progress-title {
+  font-size: 26px;
+
+  font-weight: 700;
+
+  margin-bottom: 35px;
+
+  color: var(--bcob-text);
+}
+
+.bcob-step-list {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.bcob-step-item {
+  display: flex;
+  gap: 18px;
+  cursor: pointer;
+  transition: 0.25s;
+  position: relative;
+}
+
+.bcob-step-item:after {
+  content: "";
+  width: 2px;
+  height: 20px;
+  position: absolute;
+  background: #e6e3dd;
+  z-index: 1;
+  left: 16px;
+  top: 100%;
+  transform: translate(0, -4px);
+}
+
+.bcob-step-item:last-child:after {
+  display: none;
+}
+
+.bcob-step-item:hover {
+  opacity: 1;
+}
+
+.bcob-step-item.is-active {
+  opacity: 1;
+}
+
+.bcob-step-item.is-complete {
+  opacity: 1;
+}
+
+.bcob-step-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #5a5a62;
+  outline: 2px solid #e6e3dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: 0.25s;
+  font-size: 13px;
+  line-height: 1.1;
+}
+
+.bcob-step-item.is-active .bcob-step-number {
+  background: linear-gradient(180deg, #ff852e 0%, #ff6b00 100%);
+  color: #2a2a2e;
+  outline: 4px solid #ff6b0033;
+  width: 34px;
+  height: 34px;
+}
+
+.bcob-step-item.is-complete .bcob-step-number {
+  background: #009fdf;
+  outline: none;
+  color: #fff;
+}
+
+.bcob-step-item.is-complete:after {
+  background: #009fdf;
+}
+
+.bcob-step-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 5px;
+}
+
+.bcob-step-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #5a5a62;
+}
+
+.bcob-step-item.is-active .bcob-step-title {
+  font-weight: 700;
+  color: #000000;
+}
+
+.bcob-step-description {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #5a5a62;
+}
+
+.bcob-step-item.is-active .bcob-step-description {
+  color: #767680;
+}
+
+/* Progress Bar */
+.bcob-form-progress {
+  margin-bottom: 36px;
+}
+
+.bcob-form-progress-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 12px;
+}
+
+.bcob-form-progress-percent {
+  font-size: 13px;
+  font-weight: 500;
+  color: #5a5a62;
+  line-height: 1;
+}
+
+.bcob-form-progress-percent {
+  font-size: 15px;
+  font-weight: 700;
+  color: #555a66;
+}
+
+.bcob-form-progress-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: #b9e3f6;
+  overflow: hidden;
+}
+
+.bcob-form-progress-fill {
+  height: 100%;
+  width: 0;
+
+  background: #ff6a00;
+
+  border-radius: 999px;
+
+  transition: width 0.35s ease;
+}
+/* Progress Bar Ends */

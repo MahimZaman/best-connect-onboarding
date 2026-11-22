@@ -1,0 +1,1327 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+body {
+  font-family: "Figtree", sans-serif;
+}
+
+/* Advanced Checkbox CSS */
+
+.bcob-checkbox-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  font-family: "Figtree", sans-serif;
+}
+
+.bcob-checkbox-card {
+  display: block;
+  cursor: pointer;
+}
+
+.bcob-checkbox-card input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.bcob-checkbox-card__box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  padding: 22px 20px;
+  border: 1px solid #e6e3dd;
+  border-radius: 12px;
+  background: #fff;
+  transition: 0.25s;
+}
+
+.bcob-checkbox-card:hover .bcob-checkbox-card__box {
+  border-color: #ff6b00;
+}
+
+.bcob-checkbox-card__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: linear-gradient(130.01deg, #f4fafd 0%, #e0f4fc 70.97%);
+  border: 0.5px solid #009fdf33;
+  color: #00a3e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 5px 0px #0000001a;
+}
+
+.bcob-checkbox-card__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bcob-checkbox-card__icon svg {
+  width: 32px;
+  height: 32px;
+  fill: #23b0e9;
+}
+
+.bcob-checkbox-card__icon svg path {
+  fill: #23b0e9;
+}
+
+.bcob-checkbox-card__check {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #c8c4ba;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: 0.25s;
+}
+
+.bcob-checkbox-card__check svg {
+  opacity: 0;
+  transform: scale(0.7);
+  transition: 0.2s;
+}
+
+.bcob-checkbox-card__title {
+  display: block;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.bcob-checkbox-card__description {
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #5a5a62;
+}
+
+.bcob-checkbox-card input:checked + .bcob-checkbox-card__box {
+  border-color: #ff6b00;
+  background: linear-gradient(180deg, #fff1e5 0%, #ffffff 100%);
+}
+
+.bcob-checkbox-card
+  input:checked
+  + .bcob-checkbox-card__box
+  .bcob-checkbox-card__icon {
+  background: #ff6b00;
+  color: #fff;
+}
+
+.bcob-checkbox-card
+  input:checked
+  + .bcob-checkbox-card__box
+  .bcob-checkbox-card__check {
+  border-color: #ff6b00;
+  background: #fff;
+  color: #ff6b00;
+}
+
+.bcob-checkbox-card
+  input:checked
+  + .bcob-checkbox-card__box
+  .bcob-checkbox-card__icon
+  svg {
+  fill: #fff;
+}
+
+.bcob-checkbox-card
+  input:checked
+  + .bcob-checkbox-card__box
+  .bcob-checkbox-card__icon
+  svg
+  path {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.bcob-checkbox-card
+  input:checked
+  + .bcob-checkbox-card__box
+  .bcob-checkbox-card__check
+  svg {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (max-width: 768px) {
+  .bcob-checkbox-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Advanced Checkbox CSS Ends */
+
+/* Advanced Radio CSS */
+
+.bcob-advanced-radio-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  font-family: "Figtree", sans-serif;
+}
+
+.bcob-advanced-radio-card {
+  display: block;
+  cursor: pointer;
+}
+
+.bcob-advanced-radio-card input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.bcob-advanced-radio-card__box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  padding: 22px 20px;
+  border: 1px solid #e6e3dd;
+  border-radius: 12px;
+  background: #fff;
+  transition: 0.25s;
+}
+
+.bcob-advanced-radio-card:hover .bcob-advanced-radio-card__box {
+  border-color: #ff6b00;
+}
+
+.bcob-advanced-radio-card__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: linear-gradient(130.01deg, #f4fafd 0%, #e0f4fc 70.97%);
+  border: 0.5px solid #009fdf33;
+  color: #00a3e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bcob-advanced-radio-card__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bcob-advanced-radio-card__icon svg {
+  width: 32px;
+  height: 32px;
+  fill: #23b0e9;
+}
+
+.bcob-advanced-radio-card__icon svg path {
+  fill: #23b0e9;
+}
+
+.bcob-advanced-radio-card__check {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #c8c4ba;
+  border-radius: 50%;
+  transition: 0.25s;
+}
+
+.bcob-advanced-radio-card__check::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  background: #ff6b00;
+  transform: scale(0);
+  transition: 0.2s;
+}
+
+.bcob-advanced-radio-card__title {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #000;
+}
+
+.bcob-advanced-radio-card__description {
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #5a5a62;
+}
+
+.bcob-advanced-radio-card input:checked + .bcob-advanced-radio-card__box {
+  border-color: #ff6b00;
+  background: linear-gradient(180deg, #fff1e5 0%, #ffffff 100%);
+}
+
+.bcob-advanced-radio-card
+  input:checked
+  + .bcob-advanced-radio-card__box
+  .bcob-advanced-radio-card__icon {
+  background: #ff6b00;
+  color: #fff;
+}
+
+.bcob-advanced-radio-card
+  input:checked
+  + .bcob-advanced-radio-card__box
+  .bcob-advanced-radio-card__icon
+  svg,
+.bcob-advanced-radio-card
+  input:checked
+  + .bcob-advanced-radio-card__box
+  .bcob-advanced-radio-card__icon
+  svg
+  path {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.bcob-advanced-radio-card
+  input:checked
+  + .bcob-advanced-radio-card__box
+  .bcob-advanced-radio-card__check {
+  border-color: #ff6b00;
+}
+
+.bcob-advanced-radio-card
+  input:checked
+  + .bcob-advanced-radio-card__box
+  .bcob-advanced-radio-card__check::after {
+  transform: scale(1);
+}
+
+@media (max-width: 768px) {
+  .bcob-advanced-radio-cards {
+    grid-template-columns: 1fr;
+  }
+}
+/* Advanced Radio CSS Ends */
+
+/* Regular Radio Field */
+
+.bcob-radio-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+label.bcob-field-label {
+  font-family: "Figtree", sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 1;
+  color: #000000;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.bcob-radio-card {
+  display: block;
+  cursor: pointer;
+}
+
+.bcob-radio-card input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.bcob-radio-card__box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border: 1px solid #e6e3dd;
+  border-radius: 12px;
+  background: #fff;
+  transition: 0.25s;
+}
+
+.bcob-radio-card__circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #9c9890;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: 0.25s;
+}
+
+.bcob-radio-card__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff6b00;
+  transform: scale(0);
+  transition: 0.25s;
+}
+
+.bcob-radio-card__label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.3;
+}
+
+.bcob-radio-card:hover .bcob-radio-card__box {
+  border-color: #ff6b00;
+}
+
+.bcob-radio-card
+  input:checked
+  + .bcob-radio-card__box
+  .bcob-radio-card__circle {
+  border-color: #9c9890;
+}
+
+.bcob-radio-card input:checked + .bcob-radio-card__box .bcob-radio-card__dot {
+  transform: scale(1);
+}
+
+@media (max-width: 768px) {
+  .bcob-radio-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Regular Radio Field Ends */
+
+/* File Upload Field */
+
+.bcob-file-upload {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 40px 32px;
+  border: 2px dashed #c8c4ba;
+  border-radius: 24px;
+  background: #faf8f5;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s;
+  font-family: inherit;
+}
+
+.bcob-file-upload:hover {
+  border-color: #00a3e5;
+  background: #fcfeff;
+}
+
+.bcob-file-upload input[type="file"] {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.bcob-file-upload__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(130.01deg, #f4fafd 0%, #e0f4fc 70.97%);
+  border: 0.5px solid rgba(0, 159, 223, 0.2);
+  box-shadow: 0 8px 18px rgba(0, 163, 229, 0.08);
+}
+
+.bcob-file-upload__icon i {
+  font-size: 26px;
+  line-height: 1;
+  background: linear-gradient(135deg, #5dc6f0 0%, #00a3e5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bcob-file-upload__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #141414;
+}
+
+.bcob-file-upload__meta {
+  max-width: 620px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #5a5a62;
+}
+
+.bcob-file-upload__description {
+  max-width: 620px;
+  color: #5a5a62;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.bcob-upload-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bcob-upload-item {
+  animation: fadeIn 0.2s ease;
+}
+
+.bcob-upload-file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: #fff;
+  border: 1px solid #e7edf2;
+  border-radius: 14px;
+  transition: 0.2s;
+  flex: 1;
+}
+
+.bcob-upload-file:hover {
+  border-color: #00a3e5;
+}
+
+.bcob-upload-file__left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.bcob-upload-file__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4fafd;
+  color: #00a3e5;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.bcob-upload-file__content {
+  min-width: 0;
+}
+
+.bcob-upload-name {
+  font-weight: 600;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bcob-upload-size {
+  margin-top: 3px;
+  font-size: 13px;
+  color: #7b7b86;
+}
+
+.bcob-upload-remove {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 10px;
+  background: #f7f8fa;
+  color: #8a8a94;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.bcob-upload-remove:hover {
+  background: #fdeded;
+  color: #e53935;
+}
+
+.bcob-upload-remove i {
+  font-size: 18px;
+}
+
+.bcob-file-upload.dragover {
+  border-color: #00a3e5;
+  background: #f4fafd;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* File Upload Field Ends */
+
+.hero-section {
+  max-width: 100%;
+  font-family: "Figtree", sans-serif;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px;
+  border: 2px solid #ff6b0040;
+  border-radius: 999px;
+  color: #b35000;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: "Figtree", sans-serif;
+  background: linear-gradient(180deg, #ffffff 0%, #fff1e5 100%);
+}
+
+.hero-badge i {
+  font-size: 13px;
+}
+
+.hero-title {
+  margin: 0 0 22px;
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  color: #111;
+  text-transform: uppercase;
+  font-family: "Figtree", sans-serif;
+  margin-block: 12px;
+}
+
+.hero-description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #5a5a62;
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+}
+
+/* HTML Field - Stats Card */
+
+.stats-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 20px 22px;
+  background: #fff1e5;
+  border: 1.5px solid #ff6b002e;
+  border-radius: 22px;
+  font-family: "Figtree", sans-serif;
+}
+
+.stats-left {
+  flex: 0 0 40%;
+}
+
+.stats-right {
+  flex: 1;
+}
+
+.stats-label {
+  margin-bottom: 2px;
+  color: #b35000;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.stats-number {
+  margin-bottom: 2px;
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -2px;
+}
+
+.stats-subtitle {
+  color: #5a5a62;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.stats-right p {
+  margin: 0;
+  color: #2a2a2e;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .stats-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .stats-left,
+  .stats-right {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .stats-number {
+    font-size: 42px;
+  }
+
+  .stats-subtitle,
+  .stats-right p {
+    font-size: 16px;
+  }
+}
+
+/* HTML Field - Stats Card Ends */
+
+/* Blue Notice HTML - Field */
+
+p.blue-notice {
+  background: linear-gradient(180deg, #ffffff 0%, #e0f4fc 100%);
+  border: 1px solid #009fdf33;
+  padding-top: 14px;
+  padding-right: 16px;
+  padding-bottom: 14px;
+  padding-left: 19px;
+  border-radius: 16px;
+  border-left: 3px solid #009fdf;
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #2a2a2e;
+}
+/* Blue Notice HTML - Field */
+
+/* Text Field - CSS */
+
+input.bcob-input {
+  width: 100%;
+  border: 1px solid #76716a;
+  border-radius: 14px;
+  padding: 13px 14px;
+  height: auto;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+}
+
+input.bcob-input::placeholder {
+  color: #6e6e76;
+}
+
+.bcob-field-text {
+  width: 100%;
+}
+
+.bcob-field.is-invalid {
+  position: relative;
+}
+
+.bcob-field.is-valid {
+  position: relative;
+}
+
+.bcob-field.is-valid .bcob-input {
+  border-color: #3e8f35;
+  background: #ecf5ea;
+}
+
+.bcob-field.is-aifilled:has(
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea
+  ):after {
+  content: "✓ ERKANNT";
+  color: #3e8f35;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  border: 1px solid #3e8f35;
+  background: #fff;
+  padding: 1.5px 8px;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0;
+  top: 13px;
+  transform: translate(-10px, 0%);
+  border-radius: 50px;
+}
+
+.bcob-field.is-invalid .bcob-input {
+  border-color: #dc2626;
+}
+/* Text Field - CSS Ends */
+
+/* Step Editor CSS */
+
+.bcob-step-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.bcob-step-summary {
+  width: 100%;
+}
+
+.bcob-step-summary__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 27px;
+  margin-top: 17px;
+}
+
+.bcob-step-summary__title {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: 000;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.bcob-step-summary__edit,
+.bcob-step-summary__edit-membership {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  line-height: 1.5;
+  color: #5a5a62;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+  transition: 0.2s;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: unset;
+}
+
+.bcob-step-summary__edit:hover,
+.bcob-step-summary__edit-membership:hover {
+  background: transparent;
+  color: #5a5a62;
+}
+
+.bcob-step-summary__card {
+  background: #faf8f5;
+
+  border: 1px solid #e6e3dd;
+
+  border-radius: 13px;
+
+  padding: 14px 16px;
+}
+
+.bcob-step-summary__row {
+  display: grid;
+
+  grid-template-columns: 190px 1fr;
+
+  gap: 20px;
+
+  align-items: start;
+
+  padding: 8px 0;
+}
+
+.bcob-step-summary__row:first-child {
+  padding-top: 0;
+}
+
+.bcob-step-summary__row:last-child {
+  padding-bottom: 0;
+}
+
+.bcob-step-summary__label {
+  font-size: 13px;
+
+  color: #5a5a62;
+
+  line-height: 1.45;
+}
+
+.bcob-step-summary__value {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.45;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .bcob-step-summary__row {
+    grid-template-columns: 1fr;
+
+    gap: 4px;
+
+    padding: 10px 0;
+  }
+}
+
+/* Step Editor CSS Ends */
+
+/* Coupon CSS */
+
+.bcob-coupon {
+  width: 100%;
+}
+
+.bcob-coupon__label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
+  margin-bottom: 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5a5a62;
+}
+
+.bcob-coupon__row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+input.bcob-coupon__input {
+  height: 46px;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 13px 14px;
+  flex: 1;
+  background: #ffffff;
+  color: #000;
+  outline: none;
+  box-shadow: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+input.bcob-coupon__input:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+  border-color: #005fcc;
+}
+
+.bcob-file-upload:has(input[type="file"]:focus-visible) {
+  outline: 3px solid #005fcc;
+  outline-offset: 3px;
+  border-color: #005fcc;
+}
+
+input.bcob-coupon__input.success {
+  border-color: #00a878;
+  background: #ecf5ea;
+  color: #3e8f35;
+}
+
+input.bcob-coupon__input.error {
+  border-color: #721c24;
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.bcob-coupon__input:read-only {
+  cursor: default;
+}
+
+.bcob-coupon__apply {
+  flex: 0 0 134px;
+  height: 46px;
+  border-radius: 50px;
+  background: #fff !important;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 1.5px solid #9c9890;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #000 !important;
+  padding: 0;
+}
+
+.bcob-coupon__apply:hover {
+  background: #fff;
+  color: #000;
+  border-color: #000;
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bcob-coupon__message {
+  margin-top: 8px;
+  color: #7a7a7a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.bcob-coupon__message.success {
+  color: #3e8f35;
+}
+
+.bcob-coupon__message.error {
+  color: #721c24;
+}
+
+.bcob-coupon.is-hidden {
+  display: none;
+}
+
+.bcob-loader {
+  --color-1: #000;
+  --size: 1px;
+  width: calc(14 * var(--size));
+  height: calc(14 * var(--size));
+  border: calc(2 * var(--size)) solid var(--color-1);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .bcob-coupon__row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .bcob-coupon__apply {
+    flex: none;
+    width: 100%;
+  }
+
+  .bcob-coupon__input {
+    font-size: 22px;
+  }
+}
+
+/* Coupon CSS Ends */
+
+/* Checkbox Field CSS */
+
+.bcob-checkbox {
+  width: 100%;
+}
+
+.bcob-checkbox__label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 14px;
+  background: #faf8f5;
+  border: 1px solid #e6e3dd;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.bcob-checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.bcob-checkbox__box {
+  position: relative;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #9c9890;
+  border-radius: 6px;
+  background: #fff;
+  transition: 0.2s;
+}
+
+.bcob-checkbox__text {
+  flex: 1;
+  color: #2a2a2e;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Checked */
+
+.bcob-checkbox__input:checked + .bcob-checkbox__box {
+  background: #fff;
+  border-color: #ff6b00;
+}
+
+.bcob-checkbox__input:checked + .bcob-checkbox__box::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid #ff6b00;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Focus */
+
+.bcob-checkbox__input:focus-visible + .bcob-checkbox__box {
+  outline: 2px solid rgba(42, 42, 46, 0.15);
+  outline-offset: 2px;
+}
+
+/* Checkbox Field CSS Ends */
+
+/* Order Review Field CSS */
+.bcob-summary-wrapper {
+  background: #fff5ec;
+  border: 1px solid #f7c9a5;
+  border-radius: 18px;
+  padding: 22px 24px;
+}
+
+.bcob-summary__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.bcob-summary__row + .bcob-summary__row {
+  margin-top: 12px;
+}
+
+.bcob-summary__label {
+  color: #2a2a2e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.bcob-summary__label--accent {
+  color: #d35b00;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bcob-summary__value {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  list-style: 1.5;
+  white-space: nowrap;
+}
+
+.bcob-summary__divider {
+  margin: 12px 0;
+  border-top: 1px solid #f2d6bf;
+}
+
+.bcob-summary__row--total {
+  align-items: center;
+}
+
+.bcob-summary__row--total .bcob-summary__label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000;
+}
+
+.bcob-summary__total {
+  color: #000;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.bcob-summary__note {
+  margin-top: 12px;
+  color: #5a5a62;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .bcob-summary {
+    padding: 18px;
+  }
+
+  .bcob-summary__total {
+    font-size: 34px;
+  }
+}
+
+/* Order Review Field CSS Ends */
+
+/* Order Total CSS */
+
+.bcob-pay-today {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+
+  width: 100%;
+  padding: 28px 30px;
+
+  background: #fff5ec;
+  border: 1px solid #f7c9a5;
+  border-radius: 24px;
+}
+
+.bcob-pay-today__left {
+  flex-shrink: 0;
+}
+
+.bcob-pay-today__label {
+  margin-bottom: 8px;
+  color: #b35000;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.bcob-pay-today__price {
+  color: #000;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.bcob-pay-today__right {
+  max-width: 430px;
+  margin-left: auto;
+  color: #5a5a62;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: right;
+}
+
+.bcob-radio-card input:focus-visible + .bcob-radio-card__box,
+.bcob-advanced-radio-card input:focus-visible + .bcob-advanced-radio-card__box,
+.bcob-checkbox-card input:focus-visible + .bcob-checkbox-card__box {
+  outline: 3px solid #005fcc;
+  outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .bcob-pay-today {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px;
+  }
+
+  .bcob-pay-today__right {
+    max-width: 100%;
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+/* Order Total CSS Ends */

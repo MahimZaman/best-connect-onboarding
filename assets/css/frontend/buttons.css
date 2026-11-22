@@ -1,0 +1,80 @@
+:root {
+  --bcob-bg-btn: #ff6b00;
+}
+
+.bcob-navigation {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #e6e3dd;
+  padding-top: 20px;
+}
+
+.bcob-btn {
+  border: none;
+
+  cursor: pointer;
+
+  padding: 14px 32px;
+
+  border-radius: 50px;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  transition: var(--bcob-transition);
+}
+
+.bcob-btn:disabled {
+  opacity: 0.55;
+
+  cursor: not-allowed;
+}
+
+.bcob-prev {
+  background: #ffffff;
+  border: 1.5px solid #9c9890;
+  color: #000000;
+}
+
+.bcob-prev:hover {
+  background: #ffffff;
+  color: #000000;
+  border: 1.5px solid #000;
+  box-shadow: none;
+}
+
+.bcob-save {
+  background: #fff;
+  color: #5a5a62;
+  border: none;
+  box-shadow: none;
+  padding: 14px 18px;
+  font-family: "Figtree";
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration: underline;
+}
+
+.bcob-save:hover {
+  background: #fff;
+  box-shadow: none !important;
+  color: #5a5a62;
+}
+
+.bcob-next,
+.bcob-submit {
+  background: linear-gradient(180deg, #ff852e 0%, #ff6b00 100%);
+  color: #000000;
+}
+
+.bcob-next:hover,
+.bcob-submit:hover {
+  background: linear-gradient(180deg, #ff852e 0%, #ff6b00 100%);
+  color: #000000;
+}
+
+button.bcob-btn.bcob-save {
+  margin-left: auto;
+}

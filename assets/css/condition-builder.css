@@ -1,0 +1,115 @@
+.bcob-condition-builder {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid var(--bcob-border);
+  border-radius: 8px;
+}
+
+.bcob-condition-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.bcob-condition-rules {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.bcob-condition-rule {
+  padding: 16px;
+  border: 1px solid var(--bcob-border);
+  border-radius: 8px;
+  background: var(--bcob-light);
+}
+
+.bcob-condition-rule-grid {
+  display: grid;
+  grid-template-columns: 1fr 220px 1fr 42px;
+  gap: 15px;
+  align-items: end;
+}
+
+.bcob-rule-delete {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--bcob-border);
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.bcob-rule-delete:hover {
+  color: #dc2626;
+}
+
+.bcob-condition-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bcob-current-conditions {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bcob-condition-item {
+  background: #fff;
+  border: 1px solid var(--bcob-border);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.bcob-condition-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.bcob-condition-item-rules {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bcob-condition-item-rule {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #555;
+}
+
+.bcob-condition-rule-grid > .bcob-form-group {
+  margin-bottom: 0;
+}
+
+.bcob-update-condition {
+  margin-left: auto !important;
+  margin-right: 10px !important;
+}
+
+@media (max-width: 1024px) {
+  .bcob-condition-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bcob-condition-rule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bcob-condition-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+}

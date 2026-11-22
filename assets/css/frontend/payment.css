@@ -1,0 +1,88 @@
+.bcob-payment-wrapper {
+  width: 100%;
+}
+
+.bcob-payment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+h5.bcob-payment__title {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.bcob-payment__powered {
+  color: #5a5a62;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.bcob-payment {
+  border: 1px solid #e6e3dd;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  padding: 20px;
+}
+
+#bcob-payment-element {
+  width: 100%;
+}
+
+.bcob-payment-error {
+  padding: 16px;
+  color: #dc2626;
+  font-size: 14px;
+}
+
+.StripeElement,
+.StripeElement iframe {
+  width: 100% !important;
+}
+
+.p-PaymentAccordionUnsafeAppearanceTheme {
+  border-radius: 12px !important;
+}
+
+.p-PaymentAccordionUnsafeAppearanceTheme .Block {
+  border-radius: 12px !important;
+}
+
+.bcob-payment-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 72px;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bcob-payment-loading__spinner {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #e5e7eb;
+  border-top-color: #374151;
+  border-radius: 50%;
+  animation: bcob-payment-loading-spin 0.7s linear infinite;
+}
+
+.bcob-payment-loading__text {
+  letter-spacing: -0.01em;
+}
+
+@keyframes bcob-payment-loading-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

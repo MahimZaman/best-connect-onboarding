@@ -1,0 +1,1892 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Best Connect Onboarding German\n"
+"POT-Creation-Date: 2026-08-28 08:42+0600\n"
+"PO-Revision-Date: 2026-08-28 08:42+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_attr__;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: src/AI/AI.php:97 src/AI/AI.php:285
+msgid "OpenAI API key is missing."
+msgstr ""
+
+#: src/AI/AI.php:343
+msgid "Unknown OpenAI error."
+msgstr ""
+
+#: src/AI/AI.php:375
+msgid "OpenAI returned an empty response."
+msgstr ""
+
+#: src/AI/AI.php:397
+msgid "OpenAI returned invalid JSON."
+msgstr ""
+
+#: src/AI/File.php:31
+msgid "File not found."
+msgstr ""
+
+#: src/AI/File.php:80
+msgid "OpenAI upload failed."
+msgstr ""
+
+#: src/Abandonment/Abandonment.php:69
+msgid "Every 15 Minutes"
+msgstr ""
+
+#: src/Abandonment/Abandonment.php:137
+msgid "Invalid abandonment data."
+msgstr ""
+
+#: src/Abandonment/Abandonment.php:173
+msgid "This session has already been completed."
+msgstr ""
+
+#: src/Abandonment/Abandonment.php:255
+msgid "Unable to save the onboarding session."
+msgstr ""
+
+#: src/Abandonment/Abandonment.php:287
+msgid "Invalid resume link."
+msgstr ""
+
+#: src/Abandonment/Abandonment.php:313
+msgid "Resume session not found."
+msgstr ""
+
+#: src/Abandonment/Abandonment.php:325
+msgid "This onboarding has already been completed."
+msgstr ""
+
+#: src/Abandonment/Abandonment.php:534
+msgid "Continue your onboarding"
+msgstr ""
+
+#: src/Admin/Ajax.php:34 src/Admin/Ajax.php:78 src/Admin/Ajax.php:122
+#: src/Admin/Ajax.php:149 src/Admin/Ajax.php:179 src/Admin/Settings.php:111
+#: src/Admin/Settings.php:194 src/Admin/Settings.php:246
+#: src/Payments/Stripe.php:1462
+msgid "Permission denied."
+msgstr ""
+
+#: src/Admin/Ajax.php:40 src/Admin/Ajax.php:128 src/Admin/Ajax.php:155
+msgid "Invalid form."
+msgstr ""
+
+#: src/Admin/Ajax.php:46 src/Admin/Ajax.php:159 src/Admin/Ajax.php:235
+msgid "Form not found."
+msgstr ""
+
+#: src/Admin/Ajax.php:82 src/Frontend/Ajax.php:573
+msgid "No file uploaded."
+msgstr ""
+
+#: src/Admin/Ajax.php:90
+msgid "Invalid JSON file."
+msgstr ""
+
+#: src/Admin/Ajax.php:97
+msgid "Invalid export file."
+msgstr ""
+
+#: src/Admin/Ajax.php:101
+msgid "Imported Form"
+msgstr ""
+
+#: src/Admin/Ajax.php:107
+msgid "Unable to import form."
+msgstr ""
+
+#: src/Admin/Ajax.php:111
+msgid "Form imported successfully."
+msgstr ""
+
+#: src/Admin/Ajax.php:134
+msgid "Unable to duplicate form."
+msgstr ""
+
+#: src/Admin/Ajax.php:139
+msgid "Form duplicated."
+msgstr ""
+
+#: src/Admin/Ajax.php:163
+msgid "Unable to delete form."
+msgstr ""
+
+#: src/Admin/Ajax.php:168
+msgid "Form deleted successfully."
+msgstr ""
+
+#: src/Admin/Ajax.php:190 templates/frontend/form.php:15
+msgid "Invalid form schema."
+msgstr ""
+
+#: src/Admin/Ajax.php:194
+msgid "Untitled Form"
+msgstr ""
+
+#: src/Admin/Ajax.php:214
+msgid "Unable to create form."
+msgstr ""
+
+#: src/Admin/Ajax.php:219
+msgid "Form created successfully."
+msgstr ""
+
+#: src/Admin/Ajax.php:244
+msgid "Unable to save form."
+msgstr ""
+
+#: src/Admin/Ajax.php:249
+msgid "Form saved successfully."
+msgstr ""
+
+#: src/Admin/Dashboard.php:103 src/Core/Admin.php:43 src/Core/Admin.php:44
+msgid "Best Connect"
+msgstr ""
+
+#: src/Admin/Dashboard.php:107
+msgid "Overview of your onboarding platform."
+msgstr ""
+
+#: src/Admin/Dashboard.php:119
+msgid "Create Form"
+msgstr ""
+
+#: src/Admin/Dashboard.php:126
+msgid "View Leads"
+msgstr ""
+
+#: src/Admin/Dashboard.php:143
+msgid "Total Forms"
+msgstr ""
+
+#: src/Admin/Dashboard.php:150
+msgid "Forms created"
+msgstr ""
+
+#: src/Admin/Dashboard.php:164
+msgid "Total Leads"
+msgstr ""
+
+#: src/Admin/Dashboard.php:173
+#, php-format
+msgid "%s received today"
+msgstr ""
+
+#: src/Admin/Dashboard.php:190 src/Core/Admin.php:98 src/Core/Admin.php:99
+#: src/Payments/Payment.php:489
+msgid "Payments"
+msgstr ""
+
+#: src/Admin/Dashboard.php:197
+msgid "Recorded payments"
+msgstr ""
+
+#: src/Admin/Dashboard.php:212
+msgid "Payment Volume"
+msgstr ""
+
+#: src/Admin/Dashboard.php:223
+msgid "Multiple currencies"
+msgstr ""
+
+#: src/Admin/Dashboard.php:225
+msgid "No payments recorded"
+msgstr ""
+
+#: src/Admin/Dashboard.php:245
+msgid "Quick Actions"
+msgstr ""
+
+#: src/Admin/Dashboard.php:252
+msgid "Create New Form"
+msgstr ""
+
+#: src/Admin/Dashboard.php:257
+msgid "Manage Forms"
+msgstr ""
+
+#: src/Admin/Dashboard.php:262
+msgid "Browse Leads"
+msgstr ""
+
+#: src/Admin/Dashboard.php:267
+msgid "Plugin Settings"
+msgstr ""
+
+#: src/Admin/Dashboard.php:281
+msgid "Recent Leads"
+msgstr ""
+
+#: src/Admin/Dashboard.php:284
+msgid "View all"
+msgstr ""
+
+#: src/Admin/Dashboard.php:331 src/Admin/Dashboard.php:443
+#, php-format
+msgid "Lead #%d"
+msgstr ""
+
+#: src/Admin/Dashboard.php:343
+msgid "No contact information"
+msgstr ""
+
+#: src/Admin/Dashboard.php:360 src/Admin/Dashboard.php:482
+msgid "ago"
+msgstr ""
+
+#: src/Admin/Dashboard.php:374
+msgid "No leads have been submitted yet."
+msgstr ""
+
+#: src/Admin/Dashboard.php:390
+msgid "Recent Payments"
+msgstr ""
+
+#: src/Admin/Dashboard.php:395
+#, php-format
+msgid "%d recorded"
+msgstr ""
+
+#: src/Admin/Dashboard.php:494
+msgid "No payments have been recorded yet."
+msgstr ""
+
+#: src/Admin/FormEditor.php:55
+msgid "Form title"
+msgstr ""
+
+#: src/Admin/FormEditor.php:71
+msgid "Build"
+msgstr ""
+
+#: src/Admin/FormEditor.php:81
+msgid "Conditions"
+msgstr ""
+
+#: src/Admin/FormEditor.php:91 src/Core/Admin.php:124 src/Core/Admin.php:125
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/FormEditor.php:101
+msgid "Saved"
+msgstr ""
+
+#: src/Admin/FormEditor.php:110
+msgid "Save"
+msgstr ""
+
+#: src/Admin/FormEditor.php:127
+msgid "Steps"
+msgstr ""
+
+#: src/Admin/FormEditor.php:164
+msgid "Step Title"
+msgstr ""
+
+#: src/Admin/FormEditor.php:179
+msgid "Step Description"
+msgstr ""
+
+#: src/Admin/FormEditor.php:201
+msgid "Enable widget sidebar for this step"
+msgstr ""
+
+#: src/Admin/FormEditor.php:227
+msgid "Add Field"
+msgstr ""
+
+#: src/Admin/FormEditor.php:461
+msgid "Step Sidebar"
+msgstr ""
+
+#: src/Admin/FormEditor.php:474
+msgid "Add Widget"
+msgstr ""
+
+#: src/Admin/Leads.php:12 src/Prefill/Prefill.php:31
+msgid "You do not have permission to access this page."
+msgstr ""
+
+#: src/Admin/Leads.php:137 src/Core/Admin.php:89 src/Core/Admin.php:90
+msgid "Leads"
+msgstr ""
+
+#: src/Admin/Leads.php:138
+msgid "View customer onboarding submissions."
+msgstr ""
+
+#: src/Admin/Leads.php:141
+msgid "leads"
+msgstr ""
+
+#: src/Admin/Leads.php:151
+msgid "Search ID, email, name or form..."
+msgstr ""
+
+#: src/Admin/Leads.php:154
+msgid "All forms"
+msgstr ""
+
+#: src/Admin/Leads.php:164 src/Payments/Payment.php:563
+msgid "All statuses"
+msgstr ""
+
+#: src/Admin/Leads.php:174 src/Payments/Payment.php:631
+msgid "Filter"
+msgstr ""
+
+#: src/Admin/Leads.php:179 src/Payments/Payment.php:649
+msgid "Clear"
+msgstr ""
+
+#: src/Admin/Leads.php:188 src/Payments/Payment.php:681
+#: src/Payments/Payment.php:822
+msgid "Lead"
+msgstr ""
+
+#: src/Admin/Leads.php:189 src/Admin/Leads.php:579 src/Payments/Payment.php:688
+#: src/Payments/Payment.php:862
+msgid "Form"
+msgstr ""
+
+#: src/Admin/Leads.php:190 src/Admin/Leads.php:518 src/Coupon/Coupon.php:368
+#: src/Coupon/Coupon.php:487 src/Payments/Payment.php:709
+#: src/Payments/Payment.php:928
+msgid "Status"
+msgstr ""
+
+#: src/Admin/Leads.php:191 src/Admin/Leads.php:584 src/Payments/Payment.php:716
+#: src/Payments/Payment.php:952
+msgid "Created"
+msgstr ""
+
+#: src/Admin/Leads.php:200
+msgid "No leads found."
+msgstr ""
+
+#: src/Admin/Leads.php:229 src/Payments/Payment.php:872
+#, php-format
+msgid "Form #%d"
+msgstr ""
+
+#: src/Admin/Leads.php:248
+msgid "View lead"
+msgstr ""
+
+#: src/Admin/Leads.php:263 src/Payments/Payment.php:1007
+#: src/Prefill/Prefill.php:332
+#, php-format
+msgid "Showing %1$s–%2$s of %3$s"
+msgstr ""
+
+#: src/Admin/Leads.php:321 src/Frontend/Ajax.php:99 src/Frontend/Ajax.php:174
+#: src/Frontend/Ajax.php:466 src/Frontend/ResendConfirmationAjax.php:58
+msgid "Lead not found."
+msgstr ""
+
+#: src/Admin/Leads.php:322
+msgid "Lead not found"
+msgstr ""
+
+#: src/Admin/Leads.php:336
+msgid "Back to leads"
+msgstr ""
+
+#: src/Admin/Leads.php:364
+msgid "Form data"
+msgstr ""
+
+#: src/Admin/Leads.php:398
+msgid "No form data available."
+msgstr ""
+
+#: src/Admin/Leads.php:406
+msgid "Products"
+msgstr ""
+
+#: src/Admin/Leads.php:438
+msgid "Payment summary"
+msgstr ""
+
+#: src/Admin/Leads.php:443
+msgid "Subtotal"
+msgstr ""
+
+#: src/Admin/Leads.php:452
+msgid "Tax"
+msgstr ""
+
+#: src/Admin/Leads.php:461 src/Coupon/Coupon.php:483
+msgid "Discount"
+msgstr ""
+
+#: src/Admin/Leads.php:470
+msgid "Total"
+msgstr ""
+
+#: src/Admin/Leads.php:479 src/Admin/Settings/General.php:113
+msgid "Currency"
+msgstr ""
+
+#: src/Admin/Leads.php:491 src/Payments/Payment.php:674
+#: src/Payments/Payment.php:786
+msgid "Payment"
+msgstr ""
+
+#: src/Admin/Leads.php:496 src/Payments/Payment.php:702
+#: src/Payments/Payment.php:906
+msgid "Provider"
+msgstr ""
+
+#: src/Admin/Leads.php:505 src/Coupon/Coupon.php:482
+msgid "Type"
+msgstr ""
+
+#: src/Admin/Leads.php:531
+msgid "Payment ID"
+msgstr ""
+
+#: src/Admin/Leads.php:543
+msgid "Contracts"
+msgstr ""
+
+#: src/Admin/Leads.php:557
+msgid "View contract"
+msgstr ""
+
+#: src/Admin/Leads.php:571
+msgid "Lead information"
+msgstr ""
+
+#: src/Admin/Leads.php:574
+msgid "Lead ID"
+msgstr ""
+
+#: src/Admin/Leads.php:589
+msgid "Updated"
+msgstr ""
+
+#: src/Admin/Leads.php:595
+msgid "Token"
+msgstr ""
+
+#: src/Admin/Leads.php:604
+msgid "Copy"
+msgstr ""
+
+#: src/Admin/Leads.php:706
+msgid "Unnamed lead"
+msgstr ""
+
+#: src/Admin/Settings.php:43
+msgid "General"
+msgstr ""
+
+#: src/Admin/Settings.php:48
+msgid "Prebuilt Styles"
+msgstr ""
+
+#: src/Admin/Settings.php:53
+msgid "Integrations"
+msgstr ""
+
+#: src/Admin/Settings.php:58
+msgid "Advanced"
+msgstr ""
+
+#: src/Admin/Settings.php:63
+msgid "Tools"
+msgstr ""
+
+#: src/Admin/Settings.php:176
+msgid "Settings saved."
+msgstr ""
+
+#: src/Admin/Settings.php:217
+msgid "Unable to export settings."
+msgstr ""
+
+#: src/Admin/Settings.php:258
+msgid "Please select a JSON settings file."
+msgstr ""
+
+#: src/Admin/Settings.php:273
+msgid "The settings file could not be uploaded."
+msgstr ""
+
+#: src/Admin/Settings.php:286
+msgid "The settings file could not be read."
+msgstr ""
+
+#: src/Admin/Settings.php:303
+msgid "Invalid JSON settings file."
+msgstr ""
+
+#: src/Admin/Settings.php:317
+msgid "Settings imported successfully."
+msgstr ""
+
+#: src/Admin/Settings.php:447
+msgid "Save Changes"
+msgstr ""
+
+#: src/Admin/Settings.php:463
+msgid "Export Settings"
+msgstr ""
+
+#: src/Admin/Settings.php:476
+msgid "Choose JSON"
+msgstr ""
+
+#: src/Admin/Settings.php:497
+msgid "Import Settings"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:54
+msgid "Tracking & Consent (GA4)"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:58
+msgid ""
+"Configure GA4, Google Tag Manager and the consent condition used before "
+"tracking events are sent."
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:69
+msgid ""
+"How to add GA4 correctly: just enter your Measurement ID here — no code "
+"editing required. On every step change the plugin automatically sends a "
+"<code>dataLayer.push</code> event. These events fire only when your consent "
+"condition has confirmed consent."
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:82
+msgid "GA4 Measurement-ID"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:97
+msgid "GTM Container-ID (optional)"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:114
+msgid "CONSENT GATING (REQUIRED)"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:134
+msgid "Only fire events after cookie consent is given"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:145
+msgid "Consent tool"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:155
+msgid "Borlabs Cookie"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:160
+msgid "Complianz"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:165
+msgid "CookieYes"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:171
+msgid "Cookiebot"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:176
+msgid "Custom JS function / cookie"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:186
+msgid "Check condition (cookie / JS function)"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:197
+msgid "Code check before every event."
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:236
+msgid "AUTOMATICALLY FIRED EVENTS"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:240
+msgid "On each funnel step change (step name & index are included):"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:261
+msgid "ABANDONMENT REMINDERS"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:265
+msgid ""
+"Automatically remind users who started an onboarding form but did not "
+"complete it."
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:285
+msgid "Enable Abandonment Reminders"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:296
+msgid "First reminder after"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:309
+msgid "hours"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:318
+msgid "Second reminder after"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:331
+msgid "days"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:342
+msgid "Reminder Email Content"
+msgstr ""
+
+#: src/Admin/Settings/Advanced.php:362
+msgid ""
+"Use {{magic_link}} in the email content to insert the dynamic resume link."
+msgstr ""
+
+#: src/Admin/Settings/General.php:59
+msgid "Administrator"
+msgstr ""
+
+#: src/Admin/Settings/General.php:65
+msgid "In this email, all the debugging and error related emails will land."
+msgstr ""
+
+#: src/Admin/Settings/General.php:77
+msgid "Admin Email Address"
+msgstr ""
+
+#: src/Admin/Settings/General.php:97
+msgid "Currency Options"
+msgstr ""
+
+#: src/Admin/Settings/General.php:103
+msgid "Configure how prices are displayed throughout the onboarding process."
+msgstr ""
+
+#: src/Admin/Settings/General.php:141
+msgid "Currency Position"
+msgstr ""
+
+#: src/Admin/Settings/General.php:151
+msgid "Left ($99.99)"
+msgstr ""
+
+#: src/Admin/Settings/General.php:159
+msgid "Right (99.99$)"
+msgstr ""
+
+#: src/Admin/Settings/General.php:167
+msgid "Left with space ($ 99.99)"
+msgstr ""
+
+#: src/Admin/Settings/General.php:175
+msgid "Right with space (99.99 $)"
+msgstr ""
+
+#: src/Admin/Settings/General.php:189
+msgid "Thousand Separator"
+msgstr ""
+
+#: src/Admin/Settings/General.php:205
+msgid "Decimal Separator"
+msgstr ""
+
+#: src/Admin/Settings/General.php:221
+msgid "Number of Decimals"
+msgstr ""
+
+#: src/Admin/Settings/General.php:244
+msgid "Membership Number"
+msgstr ""
+
+#: src/Admin/Settings/General.php:250
+msgid "Configure the membership number prefix and starting serial number."
+msgstr ""
+
+#: src/Admin/Settings/General.php:262
+msgid "Membership Number Prefix"
+msgstr ""
+
+#: src/Admin/Settings/General.php:278
+msgid "Starting Serial Number"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:29
+msgid "Open AI"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:35
+msgid ""
+"Integrate Open AI using api key for document parsing and autofilling forms "
+"and PDFs"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:45 src/Admin/Settings/Tools.php:45
+msgid "API Key"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:60
+msgid "Select Model"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:103
+msgid "Stripe"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:109
+msgid "Accept online payments securely using your Stripe account."
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:125
+msgid "Enable Stripe"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:135
+msgid "Mode"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:143
+msgid "Test"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:149
+msgid "Live"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:163
+msgid "Test Publishable Key"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:178
+msgid "Test Secret Key"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:198
+msgid "Live Publishable Key"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:213
+msgid "Live Secret Key"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:231
+msgid "Webhook Signing Secret"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:342
+msgid "Test API Connection"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:359
+msgid "Available Payment Methods"
+msgstr ""
+
+#: src/Admin/Settings/Integrations.php:365
+msgid ""
+"After connecting your Stripe account, available payment methods will appear "
+"here for selection."
+msgstr ""
+
+#: src/Admin/Settings/Styles.php:26
+msgid "Pre-designed HTML Classes"
+msgstr ""
+
+#: src/Admin/Settings/Styles.php:33
+msgid ""
+"Use the classes below in your HTML content to create the pre-designed "
+"elements shown in the examples."
+msgstr ""
+
+#: src/Admin/Settings/Styles.php:49
+msgid "Blue Notice"
+msgstr ""
+
+#: src/Admin/Settings/Styles.php:89
+msgid "Hero Section"
+msgstr ""
+
+#: src/Admin/Settings/Styles.php:107
+msgid "zahlung"
+msgstr ""
+
+#: src/Admin/Settings/Styles.php:116
+msgid "MITGLIEDSBEITRAG BEGLEICHEN"
+msgstr ""
+
+#: src/Admin/Settings/Styles.php:125
+msgid ""
+"Erste Zahlung jetzt, danach jährlich automatisch, jederzeit online kündbar."
+msgstr ""
+
+#: src/Admin/Settings/Styles.php:141
+msgid ""
+"Wrap the hero content inside the hero-section class. Use hero-badge for the "
+"small badge, hero-title for the main heading, and hero-description for the "
+"supporting text."
+msgstr ""
+
+#: src/Admin/Settings/Styles.php:177
+msgid "Group Label"
+msgstr ""
+
+#: src/Admin/Settings/Styles.php:202
+msgid ""
+"Use the bcob-group-label class on a label to create a section heading with a "
+"divider above it."
+msgstr ""
+
+#: src/Admin/Settings/Styles.php:224
+msgid "Stats Card"
+msgstr ""
+
+#: src/Admin/Settings/Styles.php:274
+msgid ""
+"Use stats-card as the main container. Inside it, use stats-left for the "
+"statistics area and stats-right for the description. The stats-left section "
+"uses stats-label, stats-number and stats-subtitle for its three text levels."
+msgstr ""
+
+#: src/Admin/Settings/Tools.php:29
+msgid "DateV Rest API"
+msgstr ""
+
+#: src/Admin/Settings/Tools.php:35
+msgid ""
+"Rest API setting to connect to REST API and send form submission data and "
+"then sync to DateV"
+msgstr ""
+
+#: src/Admin/Settings/Tools.php:59
+msgid "Server URL"
+msgstr ""
+
+#: src/Core/Admin.php:54 src/Core/Admin.php:55
+msgid "Dashboard"
+msgstr ""
+
+#: src/Core/Admin.php:63 src/Core/Admin.php:64
+#: src/Membership/Membership.php:115 src/Membership/Membership.php:123
+msgid "Versionen"
+msgstr ""
+
+#: src/Core/Admin.php:71 src/Core/Admin.php:72
+msgid "Forms"
+msgstr ""
+
+#: src/Core/Admin.php:80 src/Core/Admin.php:81
+msgid "Edit Form"
+msgstr ""
+
+#: src/Core/Admin.php:107 src/Core/Admin.php:108
+msgid "Prefill Links"
+msgstr ""
+
+#: src/Core/Admin.php:116 src/Core/Admin.php:117 src/Coupon/Coupon.php:141
+#: src/Forms/Fields/CouponField.php:37
+msgid "Coupon"
+msgstr ""
+
+#: src/Coupon/Coupon.php:39
+msgid "Coupon code is required."
+msgstr ""
+
+#: src/Coupon/Coupon.php:48
+msgid "Invalid coupon code."
+msgstr ""
+
+#: src/Coupon/Coupon.php:64
+msgid "This coupon is inactive."
+msgstr ""
+
+#: src/Coupon/Coupon.php:71
+msgid "This coupon has expired."
+msgstr ""
+
+#: src/Coupon/Coupon.php:78
+msgid "Coupon usage limit reached."
+msgstr ""
+
+#: src/Coupon/Coupon.php:88
+#, php-format
+msgid "Minimum order amount is %s."
+msgstr ""
+
+#: src/Coupon/Coupon.php:108
+#, php-format
+msgid "%s%% Rabatt wurde angewendet."
+msgstr ""
+
+#: src/Coupon/Coupon.php:113
+#, php-format
+msgid "%s wurden abgezogen."
+msgstr ""
+
+#: src/Coupon/Coupon.php:140 src/Coupon/Coupon.php:150
+msgid "Coupons"
+msgstr ""
+
+#: src/Coupon/Coupon.php:142
+msgid "Add Coupon"
+msgstr ""
+
+#: src/Coupon/Coupon.php:143
+msgid "Add New Coupon"
+msgstr ""
+
+#: src/Coupon/Coupon.php:144
+msgid "Edit Coupon"
+msgstr ""
+
+#: src/Coupon/Coupon.php:145
+msgid "New Coupon"
+msgstr ""
+
+#: src/Coupon/Coupon.php:146
+msgid "View Coupon"
+msgstr ""
+
+#: src/Coupon/Coupon.php:147
+msgid "Search Coupons"
+msgstr ""
+
+#: src/Coupon/Coupon.php:148
+msgid "No coupons found."
+msgstr ""
+
+#: src/Coupon/Coupon.php:149
+msgid "No coupons found in trash."
+msgstr ""
+
+#: src/Coupon/Coupon.php:177
+msgid "Coupon Details"
+msgstr ""
+
+#: src/Coupon/Coupon.php:209 src/Coupon/Coupon.php:481
+msgid "Coupon Code"
+msgstr ""
+
+#: src/Coupon/Coupon.php:219
+msgid "Enter coupon code"
+msgstr ""
+
+#: src/Coupon/Coupon.php:227
+msgid "Generate"
+msgstr ""
+
+#: src/Coupon/Coupon.php:235
+msgid "Coupon Type"
+msgstr ""
+
+#: src/Coupon/Coupon.php:262
+msgid "Discount Value"
+msgstr ""
+
+#: src/Coupon/Coupon.php:276 src/Coupon/Coupon.php:484
+msgid "Usage Limit"
+msgstr ""
+
+#: src/Coupon/Coupon.php:291 src/Coupon/Coupon.php:486
+msgid "Expiry Date"
+msgstr ""
+
+#: src/Coupon/Coupon.php:303
+msgid "Minimum Order Amount"
+msgstr ""
+
+#: src/Coupon/Coupon.php:317
+msgid "Maximum Discount"
+msgstr ""
+
+#: src/Coupon/Coupon.php:339
+msgid "Coupon is Active"
+msgstr ""
+
+#: src/Coupon/Coupon.php:348
+msgid "Admin Note"
+msgstr ""
+
+#: src/Coupon/Coupon.php:363
+msgid "Times Used"
+msgstr ""
+
+#: src/Coupon/Coupon.php:373 src/Coupon/Coupon.php:564
+msgid "Active"
+msgstr ""
+
+#: src/Coupon/Coupon.php:374 src/Coupon/Coupon.php:568
+msgid "Inactive"
+msgstr ""
+
+#: src/Coupon/Coupon.php:485
+msgid "Used"
+msgstr ""
+
+#: src/Coupon/Coupon.php:488
+msgid "Date"
+msgstr ""
+
+#: src/Coupon/Coupon.php:536
+msgid "Unlimited"
+msgstr ""
+
+#: src/Forms/FieldBase.php:76
+msgid "Label"
+msgstr ""
+
+#: src/Forms/FieldBase.php:89
+msgid "Placeholder"
+msgstr ""
+
+#: src/Forms/FieldBase.php:106
+msgid "Description"
+msgstr ""
+
+#: src/Forms/FieldBase.php:120
+msgid "Default Value"
+msgstr ""
+
+#: src/Forms/FieldBase.php:144
+msgid "Width"
+msgstr ""
+
+#: src/Forms/FieldBase.php:165
+msgid "CSS Class"
+msgstr ""
+
+#: src/Forms/FieldBase.php:192
+msgid "HTML ID"
+msgstr ""
+
+#: src/Forms/FieldBase.php:206
+msgid "Field ID"
+msgstr ""
+
+#: src/Forms/FieldBase.php:232
+msgid "Required Field"
+msgstr ""
+
+#: src/Forms/FieldBase.php:309
+#, php-format
+msgid "%s is required."
+msgstr ""
+
+#: src/Forms/Fields/AdvancedCheckboxField.php:34
+msgid "Advanced Checkbox"
+msgstr ""
+
+#: src/Forms/Fields/AdvancedCheckboxField.php:58
+#: src/Forms/Fields/AdvancedRadioField.php:58
+msgid "Card Options"
+msgstr ""
+
+#: src/Forms/Fields/AdvancedCheckboxField.php:66
+#: src/Forms/Fields/AdvancedRadioField.php:66
+msgid "Each option supports Title, Description, Value, Icon and Image."
+msgstr ""
+
+#: src/Forms/Fields/AdvancedCheckboxField.php:165
+#: src/Forms/Fields/AdvancedRadioField.php:176
+msgid "Option One"
+msgstr ""
+
+#: src/Forms/Fields/AdvancedCheckboxField.php:166
+#: src/Forms/Fields/AdvancedRadioField.php:177
+msgid "Description for option one."
+msgstr ""
+
+#: src/Forms/Fields/AdvancedCheckboxField.php:172
+#: src/Forms/Fields/AdvancedRadioField.php:183
+msgid "Option Two"
+msgstr ""
+
+#: src/Forms/Fields/AdvancedCheckboxField.php:173
+#: src/Forms/Fields/AdvancedRadioField.php:184
+msgid "Description for option two."
+msgstr ""
+
+#: src/Forms/Fields/AdvancedCheckboxField.php:202
+#, php-format
+msgid "Please select at least one %s."
+msgstr ""
+
+#: src/Forms/Fields/AdvancedRadioField.php:34
+msgid "Advanced Radio"
+msgstr ""
+
+#: src/Forms/Fields/AdvancedRadioField.php:213
+#, php-format
+msgid "Please select a %s."
+msgstr ""
+
+#: src/Forms/Fields/AdvancedRadioField.php:227
+#: src/Forms/Fields/RadioField.php:179 src/Forms/Fields/SelectField.php:193
+#: src/Forms/Fields/SelectField.php:204
+msgid "Invalid option selected."
+msgstr ""
+
+#: src/Forms/Fields/CheckboxField.php:34
+msgid "Checkbox"
+msgstr ""
+
+#: src/Forms/Fields/CheckboxField.php:58 src/Forms/Fields/RadioField.php:58
+#: src/Forms/Fields/SelectField.php:58
+msgid "Options"
+msgstr ""
+
+#: src/Forms/Fields/CheckboxField.php:84 src/Forms/Fields/RadioField.php:84
+#: src/Forms/Fields/SelectField.php:84
+msgid "Enter one option per line."
+msgstr ""
+
+#: src/Forms/Fields/CheckboxField.php:170
+#, php-format
+msgid "Please select at least one option for %s."
+msgstr ""
+
+#: src/Forms/Fields/CouponField.php:101
+msgid "RABATTCODE"
+msgstr ""
+
+#: src/Forms/Fields/CouponField.php:114
+msgid "Anwenden"
+msgstr ""
+
+#: src/Forms/Fields/EmailField.php:34 src/Forms/Fields/EmailField.php:62
+msgid "Email"
+msgstr ""
+
+#: src/Forms/Fields/EmailField.php:58 src/Forms/Fields/PhoneField.php:60
+msgid "Autocomplete"
+msgstr ""
+
+#: src/Forms/Fields/EmailField.php:65 src/Forms/Fields/PhoneField.php:67
+msgid "Off"
+msgstr ""
+
+#: src/Forms/Fields/EmailField.php:158
+#, php-format
+msgid "%s must be a valid email address."
+msgstr ""
+
+#: src/Forms/Fields/FileUploadField.php:34
+msgid "File Upload"
+msgstr ""
+
+#: src/Forms/Fields/FileUploadField.php:60
+msgid "Allowed File Types"
+msgstr ""
+
+#: src/Forms/Fields/FileUploadField.php:68
+msgid "Comma separated extensions."
+msgstr ""
+
+#: src/Forms/Fields/FileUploadField.php:74
+msgid "Maximum File Size (MB)"
+msgstr ""
+
+#: src/Forms/Fields/FileUploadField.php:96
+msgid "Allow Multiple Files"
+msgstr ""
+
+#: src/Forms/Fields/FileUploadField.php:111
+msgid "Is Ai Auto-Filler?"
+msgstr ""
+
+#: src/Forms/Fields/FileUploadField.php:145
+msgid "Dateien hier ablegen oder klicken"
+msgstr ""
+
+#: src/Forms/Fields/FileUploadField.php:150
+#: src/Forms/Fields/FileUploadField.php:155
+msgid "Mehrere Dateien erlaubt"
+msgstr ""
+
+#: src/Forms/Fields/FileUploadField.php:215
+#, php-format
+msgid "Please upload %s."
+msgstr ""
+
+#: src/Forms/Fields/HtmlField.php:34
+msgid "HTML"
+msgstr ""
+
+#: src/Forms/Fields/HtmlField.php:58
+msgid "HTML Content"
+msgstr ""
+
+#: src/Forms/Fields/HtmlField.php:66
+msgid "HTML entered here will be rendered on the frontend."
+msgstr ""
+
+#: src/Forms/Fields/HtmlField.php:105
+msgid "<h3>Heading</h3><p>Your custom HTML goes here.</p>"
+msgstr ""
+
+#: src/Forms/Fields/MessageField.php:34
+msgid "Message"
+msgstr ""
+
+#: src/Forms/Fields/MessageField.php:60
+msgid "Rows"
+msgstr ""
+
+#: src/Forms/Fields/MessageField.php:72 src/Forms/Fields/PhoneField.php:75
+msgid "Maximum Length"
+msgstr ""
+
+#: src/Forms/Fields/MessageField.php:173
+#, php-format
+msgid "%s exceeds the maximum allowed length."
+msgstr ""
+
+#: src/Forms/Fields/NumberField.php:34
+msgid "Number"
+msgstr ""
+
+#: src/Forms/Fields/NumberField.php:60
+msgid "Minimum"
+msgstr ""
+
+#: src/Forms/Fields/NumberField.php:72
+msgid "Maximum"
+msgstr ""
+
+#: src/Forms/Fields/NumberField.php:84
+msgid "Step"
+msgstr ""
+
+#: src/Forms/Fields/NumberField.php:186
+#, php-format
+msgid "%s must be a valid number."
+msgstr ""
+
+#: src/Forms/Fields/NumberField.php:198
+#, php-format
+msgid "%s must be at least %s."
+msgstr ""
+
+#: src/Forms/Fields/NumberField.php:209
+#, php-format
+msgid "%s must not be greater than %s."
+msgstr ""
+
+#: src/Forms/Fields/OrderReview.php:37
+msgid "Order Review"
+msgstr ""
+
+#: src/Forms/Fields/OrderTotal.php:37
+msgid "Order Total"
+msgstr ""
+
+#: src/Forms/Fields/PaymentField.php:37
+msgid "Payment Field"
+msgstr ""
+
+#: src/Forms/Fields/PaymentField.php:79
+msgid "Payment Type"
+msgstr ""
+
+#: src/Forms/Fields/PaymentField.php:87
+msgid "One Time Payment"
+msgstr ""
+
+#: src/Forms/Fields/PaymentField.php:95
+msgid "Recurring Subscription"
+msgstr ""
+
+#: src/Forms/Fields/PaymentField.php:106
+msgid "Billing Interval"
+msgstr ""
+
+#: src/Forms/Fields/PaymentField.php:115
+msgid "Daily"
+msgstr ""
+
+#: src/Forms/Fields/PaymentField.php:123
+msgid "Weekly"
+msgstr ""
+
+#: src/Forms/Fields/PaymentField.php:131
+msgid "Monthly"
+msgstr ""
+
+#: src/Forms/Fields/PaymentField.php:139
+msgid "Yearly"
+msgstr ""
+
+#: src/Forms/Fields/PaymentField.php:150
+msgid "Interval Count"
+msgstr ""
+
+#: src/Forms/Fields/PaymentField.php:191
+msgid "Payment Details"
+msgstr ""
+
+#: src/Forms/Fields/PaymentField.php:195
+msgid "Powered by Stripe"
+msgstr ""
+
+#: src/Forms/Fields/PhoneField.php:34
+msgid "Phone"
+msgstr ""
+
+#: src/Forms/Fields/PhoneField.php:64
+msgid "Telephone"
+msgstr ""
+
+#: src/Forms/Fields/PhoneField.php:177
+#, php-format
+msgid "%s must be a valid phone number."
+msgstr ""
+
+#: src/Forms/Fields/RadioField.php:34
+msgid "Radio"
+msgstr ""
+
+#: src/Forms/Fields/RadioField.php:168
+#, php-format
+msgid "Please select an option for %s."
+msgstr ""
+
+#: src/Forms/Fields/SelectField.php:34
+msgid "Select"
+msgstr ""
+
+#: src/Forms/Fields/StepEditor.php:37
+msgid "Step Editor"
+msgstr ""
+
+#: src/Forms/Fields/TextField.php:37
+msgid "Text"
+msgstr ""
+
+#: src/Forms/Widgets/AuthorBoxWidget.php:35
+msgid "Author Box"
+msgstr ""
+
+#: src/Forms/Widgets/ListingBoxWidget.php:35
+msgid "Listing Box"
+msgstr ""
+
+#: src/Forms/Widgets/PricingBoxWidget.php:35
+msgid "Pricing Box"
+msgstr ""
+
+#: src/Frontend/Ajax.php:71
+msgid "Invalid submission data."
+msgstr ""
+
+#: src/Frontend/Ajax.php:143 src/Frontend/Ajax.php:212
+msgid "The payment has not been completed."
+msgstr ""
+
+#: src/Frontend/Ajax.php:189 src/Frontend/Ajax.php:481
+#: src/Frontend/ResendConfirmationAjax.php:82
+msgid "Invalid lead submission."
+msgstr ""
+
+#: src/Frontend/Ajax.php:263
+msgid "Unable to create the contract."
+msgstr ""
+
+#: src/Frontend/Ajax.php:454
+msgid "Invalid contract data."
+msgstr ""
+
+#: src/Frontend/Ajax.php:596
+msgid "Invalid field list."
+msgstr ""
+
+#: src/Frontend/MembershipShortcode.php:54
+msgid "No portals found"
+msgstr ""
+
+#: src/Frontend/ResendConfirmationAjax.php:44
+msgid "Lead token is missing."
+msgstr ""
+
+#: src/Frontend/ResendConfirmationAjax.php:67
+msgid "This membership has already been confirmed."
+msgstr ""
+
+#: src/Frontend/ResendConfirmationAjax.php:124
+msgid "The confirmation email could not be sent."
+msgstr ""
+
+#: src/Frontend/ResendConfirmationAjax.php:134
+msgid "Confirmation email sent successfully."
+msgstr ""
+
+#: src/Frontend/Shortcode.php:27
+msgid "No form found."
+msgstr ""
+
+#: src/Membership/Membership.php:44
+msgid "Name"
+msgstr ""
+
+#: src/Membership/Membership.php:45
+msgid "Versions"
+msgstr ""
+
+#: src/Membership/Membership.php:46
+msgid "Shortcode"
+msgstr ""
+
+#: src/Membership/Membership.php:116
+msgid "Version"
+msgstr ""
+
+#: src/Membership/Membership.php:117
+msgid "Add Version"
+msgstr ""
+
+#: src/Membership/Membership.php:118
+msgid "Edit Version"
+msgstr ""
+
+#: src/Membership/Membership.php:119
+msgid "New Version"
+msgstr ""
+
+#: src/Membership/Membership.php:120
+msgid "View Version"
+msgstr ""
+
+#: src/Membership/Membership.php:121
+msgid "Search Versionen"
+msgstr ""
+
+#: src/Membership/Membership.php:122
+msgid "No Versionen Found"
+msgstr ""
+
+#: src/Membership/Membership.php:165
+msgid "Membership Details"
+msgstr ""
+
+#: src/Middleware/Middleware.php:26
+msgid "Middleware settings are invalid."
+msgstr ""
+
+#: src/Middleware/Middleware.php:38
+msgid "Middleware API settings are incomplete."
+msgstr ""
+
+#: src/Middleware/Middleware.php:58
+msgid "Unable to connect to the middleware API."
+msgstr ""
+
+#: src/Middleware/Middleware.php:69
+msgid "The middleware API returned an error."
+msgstr ""
+
+#: src/Middleware/Middleware.php:77
+msgid "Middleware request completed successfully."
+msgstr ""
+
+#: src/PDFs/Mapping.php:59
+msgid "You do not have permission to normalize contract PDFs."
+msgstr ""
+
+#: src/PDFs/Mapping.php:74
+msgid "Invalid PDF attachment."
+msgstr ""
+
+#: src/PDFs/Mapping.php:174 src/PDFs/Mapping.php:252
+msgid "Loading PDF..."
+msgstr ""
+
+#: src/PDFs/Mapping.php:175
+msgid "Reading PDF fields..."
+msgstr ""
+
+#: src/PDFs/Mapping.php:176
+msgid "No AcroForm fields found."
+msgstr ""
+
+#: src/PDFs/Mapping.php:177
+msgid "mapped"
+msgstr ""
+
+#: src/PDFs/Mapping.php:178
+msgid "fields"
+msgstr ""
+
+#: src/PDFs/Mapping.php:179
+msgid "field"
+msgstr ""
+
+#: src/PDFs/Mapping.php:180
+msgid "Do not map"
+msgstr ""
+
+#: src/PDFs/Mapping.php:181 src/PDFs/Mapping.php:317
+msgid "Loading PDF preview..."
+msgstr ""
+
+#: src/PDFs/Mapping.php:182
+msgid "Unable to load PDF."
+msgstr ""
+
+#: src/PDFs/Mapping.php:220
+msgid "Contract Field Mapping"
+msgstr ""
+
+#: src/PDFs/Mapping.php:235
+msgid "Close"
+msgstr ""
+
+#: src/PDFs/Mapping.php:265
+msgid "Zoom out"
+msgstr ""
+
+#: src/PDFs/Mapping.php:276
+msgid "Zoom in"
+msgstr ""
+
+#: src/PDFs/Mapping.php:285 src/Payments/Payment.php:1068
+#: src/Prefill/Prefill.php:392
+msgid "Previous page"
+msgstr ""
+
+#: src/PDFs/Mapping.php:296 src/Payments/Payment.php:1096
+#: src/Prefill/Prefill.php:420
+msgid "Next page"
+msgstr ""
+
+#: src/PDFs/Mapping.php:342
+msgid "AcroForm Fields"
+msgstr ""
+
+#: src/PDFs/Mapping.php:351
+msgid "Map each PDF field to a field from this form."
+msgstr ""
+
+#: src/PDFs/Mapping.php:377
+msgid "No fields mapped."
+msgstr ""
+
+#: src/PDFs/Mapping.php:392
+msgid "Cancel"
+msgstr ""
+
+#: src/PDFs/Mapping.php:407
+msgid "Save Mapping"
+msgstr ""
+
+#: src/PDFs/Mapping.php:442
+msgid "You do not have permission to inspect PDF fields."
+msgstr ""
+
+#: src/PDFs/Mapping.php:456
+msgid "Invalid PDF."
+msgstr ""
+
+#: src/PDFs/Mapping.php:468
+msgid "The selected file is not a valid PDF attachment."
+msgstr ""
+
+#: src/PDFs/Mapping.php:483
+msgid "The PDF file could not be read."
+msgstr ""
+
+#: src/PDFs/Mapping.php:494
+msgid "The PDF file is empty or could not be loaded."
+msgstr ""
+
+#: src/PDFs/Mapping.php:534
+#, php-format
+msgid "Unable to read the PDF AcroForm fields: %s"
+msgstr ""
+
+#: src/Payments/Payment.php:482
+msgid "Transactions"
+msgstr ""
+
+#: src/Payments/Payment.php:496
+msgid ""
+"View and monitor all payment transactions processed through your onboarding "
+"forms."
+msgstr ""
+
+#: src/Payments/Payment.php:512
+msgid "payments"
+msgstr ""
+
+#: src/Payments/Payment.php:547
+msgid "Search payment, lead or transaction..."
+msgstr ""
+
+#: src/Payments/Payment.php:557
+msgid "Filter by payment status"
+msgstr ""
+
+#: src/Payments/Payment.php:593
+msgid "Filter by provider"
+msgstr ""
+
+#: src/Payments/Payment.php:599
+msgid "All providers"
+msgstr ""
+
+#: src/Payments/Payment.php:695 src/Payments/Payment.php:886
+msgid "Amount"
+msgstr ""
+
+#: src/Payments/Payment.php:744
+msgid "No payments found"
+msgstr ""
+
+#: src/Payments/Payment.php:751
+msgid "There are no payment transactions matching your current filters."
+msgstr ""
+
+#: src/Payments/Payment.php:1028
+msgid "Payments pagination"
+msgstr ""
+
+#: src/Payments/Stripe.php:99 src/Payments/Stripe.php:1234
+#: src/Payments/Stripe.php:1333
+msgid "Payment could not be identified."
+msgstr ""
+
+#: src/Payments/Stripe.php:126 src/Payments/Stripe.php:344
+msgid "Stripe Secret Key is missing."
+msgstr ""
+
+#: src/Payments/Stripe.php:154 src/Payments/Stripe.php:1248
+msgid "Payment record could not be found."
+msgstr ""
+
+#: src/Payments/Stripe.php:215
+msgid "Stripe is not configured."
+msgstr ""
+
+#: src/Payments/Stripe.php:245
+msgid "Invalid payment data."
+msgstr ""
+
+#: src/Payments/Stripe.php:322
+msgid "Invalid payment amount."
+msgstr ""
+
+#: src/Payments/Stripe.php:623
+msgid "Invalid subscription interval."
+msgstr ""
+
+#: src/Payments/Stripe.php:807
+msgid "Unable to initialize the subscription payment."
+msgstr ""
+
+#: src/Payments/Stripe.php:1297
+msgid "Your payment is being processed."
+msgstr ""
+
+#: src/Payments/Stripe.php:1305
+msgid "The payment was not completed."
+msgstr ""
+
+#: src/Payments/Stripe.php:1489
+msgid "Please enter your Stripe Secret Key."
+msgstr ""
+
+#: src/Payments/Stripe.php:1534
+msgid "Stripe connected successfully."
+msgstr ""
+
+#: src/Prefill/Prefill.php:353
+msgid "Pre-fill links pagination"
+msgstr ""
+
+#: templates/admin/form-settings.php:25
+msgid "Contract Rules"
+msgstr ""
+
+#: templates/admin/form-settings.php:29
+msgid ""
+"Select the PDF contract that should be used when the following conditions "
+"are matched."
+msgstr ""
+
+#: templates/admin/form-settings.php:41
+msgid "Match Conditions Using"
+msgstr ""
+
+#: templates/admin/form-settings.php:51
+msgid "AND (All conditions must match)"
+msgstr ""
+
+#: templates/admin/form-settings.php:57
+msgid "OR (Any condition may match)"
+msgstr ""
+
+#: templates/admin/form-settings.php:77
+msgid "Field"
+msgstr ""
+
+#: templates/admin/form-settings.php:85
+msgid "Select Field"
+msgstr ""
+
+#: templates/admin/form-settings.php:99
+msgid "Condition"
+msgstr ""
+
+#: templates/admin/form-settings.php:139
+msgid "Value"
+msgstr ""
+
+#: templates/admin/form-settings.php:146
+msgid "Enter comparison value..."
+msgstr ""
+
+#: templates/admin/form-settings.php:154
+msgid "Contract PDF"
+msgstr ""
+
+#: templates/admin/form-settings.php:188
+msgid "Change PDF"
+msgstr ""
+
+#: templates/admin/form-settings.php:194
+msgid "Map PDF Fields"
+msgstr ""
+
+#: templates/admin/form-settings.php:201
+msgid "PDF Preview"
+msgstr ""
+
+#: templates/admin/form-settings.php:217
+msgid "No fields mapped"
+msgstr ""
+
+#: templates/admin/form-settings.php:253
+msgid "Add Condition"
+msgstr ""
+
+#: templates/admin/form-settings.php:268
+msgid "General Settings"
+msgstr ""
+
+#: templates/admin/form-settings.php:269
+msgid "Configure general behaviour for this form."
+msgstr ""
+
+#: templates/admin/form-settings.php:278
+msgid "Enable Analytics Tracking"
+msgstr ""
+
+#: templates/admin/form-settings.php:282
+msgid "Track form progress and completion analytics."
+msgstr ""
+
+#: templates/admin/form-settings.php:309
+msgid "Form Type"
+msgstr ""
+
+#: templates/admin/form-settings.php:313
+msgid "Select the customer type supported by this form."
+msgstr ""
+
+#: templates/admin/form-settings.php:326
+msgid "B2C"
+msgstr ""
+
+#: templates/admin/form-settings.php:330
+msgid "B2B"
+msgstr ""
+
+#: templates/admin/form-settings.php:351
+msgid "Admin Notification"
+msgstr ""
+
+#: templates/admin/form-settings.php:352
+msgid "Email sent to administrators after a successful submission."
+msgstr ""
+
+#: templates/admin/form-settings.php:360
+msgid "Recipient Email"
+msgstr ""
+
+#: templates/admin/form-settings.php:368
+msgid "admin@example.com"
+msgstr ""
+
+#: templates/admin/form-settings.php:375 templates/admin/form-settings.php:434
+msgid "Email Subject"
+msgstr ""
+
+#: templates/admin/form-settings.php:383
+msgid "New Form Submission"
+msgstr ""
+
+#: templates/admin/form-settings.php:390 templates/admin/form-settings.php:449
+msgid "Email Content"
+msgstr ""
+
+#: templates/admin/form-settings.php:425
+msgid "Customer Confirmation"
+msgstr ""
+
+#: templates/admin/form-settings.php:426
+msgid "Email automatically sent to the customer after submission."
+msgstr ""
+
+#: templates/admin/form-settings.php:442
+msgid "Thank you for your submission"
+msgstr ""
+
+#: templates/admin/form-settings.php:490
+msgid "Available Merge Tags"
+msgstr ""
+
+#: templates/admin/form-settings.php:492
+msgid "Click a tag to insert it into the active editor."
+msgstr ""
+
+#: templates/admin/form-settings.php:503
+msgid "Search tags…"
+msgstr ""
+
+#: templates/admin/form-settings.php:509
+msgid "System Tags"
+msgstr ""
+
+#: templates/admin/form-settings.php:526
+msgid "Form Fields"
+msgstr ""
+
+#: templates/frontend/form.php:8
+msgid "Form doesn't exist"
+msgstr ""
+
+#: templates/frontend/form.php:22
+msgid "Unable to parse form schema."
+msgstr ""
+
+#: templates/frontend/form.php:37
+msgid "No steps found."
+msgstr ""

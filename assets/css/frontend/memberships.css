@@ -1,0 +1,195 @@
+.bcob-memberships {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.bcob-membership-card {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.bcob-membership-card input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.bcob-membership-card input:focus-visible ~ .bcob-membership-inner {
+  outline: 3px solid #005fcc;
+  outline-offset: 3px;
+}
+
+.bcob-membership-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  min-height: 190px;
+
+  padding: 30px;
+
+  background: #fff;
+
+  border: 1px solid #e7dfd4;
+
+  border-radius: 18px;
+
+  transition: 0.25s;
+}
+
+.bcob-membership-inner:hover {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.bcob-membership-check {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+
+  border: 2px solid #cfc6ba;
+
+  background: #fff;
+
+  z-index: 10;
+
+  transition: 0.2s;
+}
+
+.bcob-membership-card input:checked + .bcob-membership-check {
+  background: #17a8e4;
+  border-color: #17a8e4;
+}
+
+.bcob-membership-card input:checked + .bcob-membership-check:after {
+  content: "";
+
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  background: #fff;
+
+  border-radius: 50%;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.bcob-membership-card input:checked ~ .bcob-membership-inner {
+  border-color: #17a8e4;
+  box-shadow: 0 12px 40px rgba(23, 168, 228, 0.15);
+}
+
+.bcob-membership-icon {
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e8f7ff;
+
+  border-radius: 14px;
+
+  margin-bottom: 18px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.bcob-membership-icon img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.bcob-membership-title {
+  display: block;
+
+  font-size: 30px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  color: #111;
+
+  margin-bottom: 14px;
+}
+
+.bcob-membership-description {
+  display: block;
+
+  color: #666;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+.bcob-membership-description p {
+  margin: 0;
+}
+
+.bcob-form-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0; /* JS overrides this */
+  background: linear-gradient(135deg, #fff1e5 0%, #e0f4fc 50%);
+  z-index: 99999;
+  display: none;
+  overflow: auto;
+}
+
+.bcob-form-container {
+  width: 100%;
+  min-height: 100%;
+
+  padding: 40px;
+
+  box-sizing: border-box;
+}
+
+.bcob-form-overlay.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .bcob-memberships {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .bcob-membership-inner {
+    min-height: 170px;
+
+    padding: 25px;
+  }
+
+  .bcob-membership-title {
+    font-size: 24px;
+  }
+}

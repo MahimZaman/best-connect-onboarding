@@ -1,0 +1,343 @@
+.bcob-sidebar-step {
+  display: none;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.bcob-sidebar-step.is-active {
+  display: flex;
+}
+
+.bcob-widget {
+  background: #fff;
+
+  border-radius: 18px;
+
+  padding: 24px;
+
+  box-shadow: var(--bcob-shadow);
+}
+
+.bcob-widget-title {
+  font-size: 18px;
+
+  font-weight: 700;
+
+  margin-bottom: 18px;
+}
+
+.bcob-widget-author {
+  color: #fff;
+
+  overflow: hidden;
+}
+
+.bcob-widget-author-image {
+  width: 82px;
+
+  height: 82px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  display: block;
+
+  margin-bottom: 18px;
+}
+
+.bcob-widget-author-name {
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+.bcob-widget-author-job {
+  opacity: 0.9;
+
+  margin-top: 4px;
+
+  margin-bottom: 18px;
+}
+
+.bcob-widget-author-description {
+  line-height: 1.7;
+
+  font-size: 15px;
+}
+
+.bcob-widget-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.bcob-widget-list-item {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.bcob-widget-list-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.bcob-widget-list-value {
+  font-weight: 700;
+}
+
+.bcob-widget-price {
+  text-align: center;
+}
+
+.bcob-widget-price-heading {
+  font-size: 42px;
+
+  font-weight: 700;
+
+  color: var(--bcob-primary);
+
+  line-height: 1;
+}
+
+.bcob-widget-price-unit {
+  font-size: 17px;
+
+  color: var(--bcob-text-light);
+
+  margin-top: 4px;
+}
+
+.bcob-widget-price-description {
+  margin-top: 18px;
+
+  color: var(--bcob-text-light);
+
+  line-height: 1.6;
+}
+
+/* Author Box Widget */
+
+.bcob-author-box {
+  padding: 18px;
+  border-radius: 16px;
+  overflow: hidden;
+  color: #000;
+  box-shadow:
+    0px 1px 2px 0px #0b0b0d0a,
+    0px 2px 8px 0px #0b0b0d0a;
+  border: 1px solid #e6e3dd;
+}
+
+.bcob-author-box__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.bcob-author-box__image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #fff;
+}
+
+.bcob-author-box__image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.bcob-author-box__content {
+  flex: 1;
+}
+
+.bcob-author-box__name {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #000;
+  font-family: "Figtree";
+}
+
+.bcob-author-box__job {
+  margin-top: 2px;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #2a2a2e;
+  font-weight: 400;
+}
+
+.bcob-author-box__description {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #000;
+  font-weight: 400;
+  font-family: "Figtree";
+}
+
+.bcob-author-box__description p {
+  margin: 0 0 24px;
+}
+
+.bcob-author-box__description p:last-child {
+  margin-bottom: 0;
+}
+
+.bcob-author-box__description strong {
+  font-weight: 700;
+}
+/* Author Box Widget Ends */
+
+/* Listing Box Widget  */
+.bcob-listing-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px #e8e8e8;
+  border: 1px solid #e6e3dd;
+}
+
+.bcob-listing-box__title {
+  margin-bottom: 14px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #000000;
+  line-height: 1.1;
+}
+
+.bcob-listing-box__items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bcob-listing-box__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.bcob-listing-box__left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.bcob-listing-box__icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bcob-listing-box__icon i {
+  font-size: 20px;
+  color: #009fdf;
+}
+
+.bcob-listing-box__label {
+  font-size: 14px;
+  color: #5a5a62;
+  line-height: 1.5;
+}
+
+.bcob-listing-box__value {
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  text-align: right;
+  line-height: 1.5;
+}
+
+/* Listing Box Widget Ends */
+
+/* Pricing Box Widget  */
+.bcob-pricing-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow:
+    0px 1px 2px 0px #0b0b0d0a,
+    0px 2px 8px 0px #0b0b0d0a;
+}
+
+.bcob-pricing-box__label {
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  line-height: 1.1;
+}
+
+.bcob-pricing-box__rating {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 6x;
+}
+
+.bcob-pricing-box__rating i {
+  color: #ff6b00;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.bcob-pricing-box__price {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.bcob-pricing-box__heading {
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 800;
+  color: #000;
+}
+
+.bcob-pricing-box__unit {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+.bcob-pricing-box__description {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.bcob-pricing-box__description + .bcob-pricing-box__description {
+  margin-top: 6px;
+}
+/* Pricing Box Widget Ends */

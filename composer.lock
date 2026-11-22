@@ -1,0 +1,186 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e3b427a7efbb50862c5ccbf6b7df110e",
+    "packages": [
+        {
+            "name": "dskripchenko/php-pdf",
+            "version": "v1.9.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dskripchenko/php-pdf.git",
+                "reference": "12f53cb5b6d46d43b628a6778cc558c9f135906e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dskripchenko/php-pdf/zipball/12f53cb5b6d46d43b628a6778cc558c9f135906e",
+                "reference": "12f53cb5b6d46d43b628a6778cc558c9f135906e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-mbstring": "*",
+                "ext-zlib": "*",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "2.1.54",
+                "phpunit/phpunit": "^11.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dskripchenko\\PhpPdf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Skripchenko",
+                    "email": "denskrp90@gmail.com"
+                }
+            ],
+            "description": "MIT alternative to mpdf (GPL) and FPDI: pure-PHP PDF toolkit — generate (HTML/CSS input, fluent builders, low-level emission, 16 barcode formats, 8 chart types, TTF embedding, AcroForm, PKCS#7 signing, PDF/A and PDF/X), plus read and merge existing PDFs (append/reorder pages, stamp overlays, FPDI-style import, encrypted input).",
+            "homepage": "https://github.com/dskripchenko/php-pdf",
+            "keywords": [
+                "AcroForm",
+                "barcode",
+                "fpdi",
+                "fpdi-alternative",
+                "gpl-free",
+                "html-to-pdf",
+                "mpdf-alternative",
+                "pdf",
+                "pdf-a",
+                "pdf-merge",
+                "pdf-reader",
+                "pdf-writer",
+                "pdf-x",
+                "pkcs7",
+                "qr-code",
+                "tagged-pdf",
+                "ttf-embed"
+            ],
+            "support": {
+                "issues": "https://github.com/dskripchenko/php-pdf/issues",
+                "source": "https://github.com/dskripchenko/php-pdf/tree/v1.9.3"
+            },
+            "time": "2026-08-06T14:01:17+00:00"
+        },
+        {
+            "name": "plusforta/pdf-forms",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/plusforta/public/pdf-forms.git",
+                "reference": "be29ba8c1740b434aa6fa70dbe07ac0fb4f8b5b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/plusforta%2Fpublic%2Fpdf-forms/repository/archive.zip?sha=be29ba8c1740b434aa6fa70dbe07ac0fb4f8b5b2",
+                "reference": "be29ba8c1740b434aa6fa70dbe07ac0fb4f8b5b2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-zlib": "*",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PlusForta\\PdfForms\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Pure PHP library for filling AcroForm fields in PDF documents",
+            "support": {
+                "issues": "https://gitlab.com/plusforta/public/pdf-forms/-/issues",
+                "source": "https://gitlab.com/plusforta/public/pdf-forms/-/tree/1.0.3"
+            },
+            "time": "2026-04-06T07:18:21+00:00"
+        },
+        {
+            "name": "stripe/stripe-php",
+            "version": "v21.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stripe/stripe-php.git",
+                "reference": "5f68d5a285d206a757ebbd9bf0e037759a61c379"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/5f68d5a285d206a757ebbd9bf0e037759a61c379",
+                "reference": "5f68d5a285d206a757ebbd9bf0e037759a61c379",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "3.94.0",
+                "phpstan/phpstan": "^1.2",
+                "phpunit/phpunit": "^8.0 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "lib/version_check.php"
+                ],
+                "psr-4": {
+                    "Stripe\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stripe and contributors",
+                    "homepage": "https://github.com/stripe/stripe-php/contributors"
+                }
+            ],
+            "description": "Stripe PHP Library",
+            "homepage": "https://stripe.com/",
+            "keywords": [
+                "api",
+                "payment processing",
+                "stripe"
+            ],
+            "support": {
+                "issues": "https://github.com/stripe/stripe-php/issues",
+                "source": "https://github.com/stripe/stripe-php/tree/v21.1.1"
+            },
+            "time": "2026-07-30T18:43:28+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}

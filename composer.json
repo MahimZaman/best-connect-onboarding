@@ -1,0 +1,13 @@
+{
+  "name": "admin/best-connect-onboarding",
+  "autoload": {
+    "psr-4": {
+      "BestConnectOnboarding\\": "src/"
+    }
+  },
+  "require": {
+    "stripe/stripe-php": "^21.1",
+    "plusforta/pdf-forms": "^1.0",
+    "dskripchenko/php-pdf": "^1.9"
+  }
+}

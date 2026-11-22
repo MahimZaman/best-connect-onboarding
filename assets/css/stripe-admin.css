@@ -1,0 +1,518 @@
+#bcob-connect-stripe {
+  min-width: 190px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+}
+
+#bcob-connect-stripe .bcob-button-loader {
+  align-items: center;
+
+  justify-content: center;
+}
+
+#bcob-connect-stripe .bcob-button-loader:not([hidden]) {
+  display: flex;
+}
+
+.ri-spin {
+  animation: bcob-spin 0.8s linear infinite;
+}
+
+@keyframes bcob-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#bcob-stripe-connect-status {
+  margin-top: 15px;
+}
+
+/* =========================================================
+   Payments
+   ========================================================= */
+
+.bcob-payments-page {
+  margin-right: 20px;
+}
+
+.bcob-page-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 28px 0 22px;
+}
+
+.bcob-page-header h1 {
+  margin: 4px 0 6px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.bcob-page-header p {
+  margin: 0;
+  color: #646970;
+  font-size: 14px;
+}
+
+.bcob-eyebrow {
+  display: block;
+  color: #8c8f94;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bcob-page-count {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  color: #646970;
+}
+
+.bcob-page-count strong {
+  color: #1d2327;
+  font-size: 22px;
+}
+
+.bcob-page-count span {
+  font-size: 13px;
+}
+
+/* Card */
+
+.bcob-payments-card {
+  overflow: hidden;
+  border: 1px solid #e1e1e1;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+/* Toolbar */
+
+.bcob-payments-toolbar {
+  padding: 16px 18px;
+  border-bottom: 1px solid #e8e8e8;
+  background: #fafafa;
+}
+
+.bcob-payments-filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.bcob-search-field {
+  position: relative;
+  flex: 1 1 320px;
+  max-width: 420px;
+}
+
+.bcob-search-field i {
+  position: absolute;
+  top: 50%;
+  left: 11px;
+  color: #8c8f94;
+  font-size: 16px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.bcob-search-field input {
+  width: 100%;
+  min-height: 38px;
+  padding: 0 12px 0 34px;
+  border: 1px solid #dcdcde;
+  border-radius: 7px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.bcob-payments-filters select {
+  min-width: 150px;
+  min-height: 38px;
+  border-color: #dcdcde;
+  border-radius: 7px;
+}
+
+.bcob-payments-filters .button {
+  min-height: 38px;
+}
+
+.bcob-clear-filter {
+  color: #646970;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.bcob-clear-filter:hover {
+  color: #2271b1;
+}
+
+/* Table */
+
+.bcob-table-wrap {
+  overflow-x: auto;
+}
+
+.bcob-payments-table {
+  width: 100%;
+  min-width: 1050px;
+  border-collapse: collapse;
+}
+
+.bcob-payments-table th {
+  padding: 13px 16px;
+  border-bottom: 1px solid #e8e8e8;
+  background: #fff;
+  color: #646970;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.bcob-payments-table td {
+  padding: 15px 16px;
+  border-bottom: 1px solid #f0f0f1;
+  color: #2c3338;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.bcob-payments-table tbody tr {
+  transition: background 0.15s ease;
+}
+
+.bcob-payments-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.bcob-payments-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* Payment */
+
+.bcob-payment-primary {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.bcob-payment-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border-radius: 9px;
+  background: #f1f1f1;
+  color: #50575e;
+}
+
+.bcob-payment-icon i {
+  font-size: 16px;
+}
+
+.bcob-payment-primary strong {
+  display: block;
+  color: #1d2327;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.bcob-payment-primary small {
+  display: block;
+  max-width: 190px;
+  margin-top: 3px;
+  overflow: hidden;
+  color: #8c8f94;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Lead */
+
+.bcob-payment-lead {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.bcob-payment-lead strong {
+  color: #2271b1;
+  font-weight: 600;
+}
+
+.bcob-payment-lead span {
+  color: #8c8f94;
+  font-size: 11px;
+}
+
+.bcob-payment-lead:hover strong {
+  text-decoration: underline;
+}
+
+/* Form */
+
+.bcob-payment-form {
+  color: #50575e;
+}
+
+/* Amount */
+
+.bcob-payment-amount {
+  color: #1d2327;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Provider */
+
+.bcob-payment-provider {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 9px;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  background: #fafafa;
+  color: #50575e;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Payment status */
+
+.bcob-payment-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 9px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.bcob-payment-status-dot {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 6px;
+  border-radius: 50%;
+  background: #8c8f94;
+}
+
+/* Succeeded */
+
+.bcob-payment-status-succeeded {
+  border-color: #b7e4cc;
+  background: #eaf8f1;
+  color: #176b45;
+}
+
+.bcob-payment-status-succeeded .bcob-payment-status-dot {
+  background: #22a060;
+}
+
+/* Completed */
+
+.bcob-payment-status-completed {
+  border-color: #b7e4cc;
+  background: #eaf8f1;
+  color: #176b45;
+}
+
+.bcob-payment-status-completed .bcob-payment-status-dot {
+  background: #22a060;
+}
+
+/* Processing */
+
+.bcob-payment-status-processing {
+  border-color: #a9ddf7;
+  background: #eaf7ff;
+  color: #075985;
+}
+
+.bcob-payment-status-processing .bcob-payment-status-dot {
+  background: #009fdf;
+}
+
+/* Failed */
+
+.bcob-payment-status-failed {
+  border-color: #f2b8b5;
+  background: #fff0ef;
+  color: #a12622;
+}
+
+.bcob-payment-status-failed .bcob-payment-status-dot {
+  background: #d63638;
+}
+
+/* Pending */
+
+.bcob-payment-status-pending,
+.bcob-payment-status-requires_payment_method,
+.bcob-payment-status-requires_confirmation,
+.bcob-payment-status-requires_action {
+  border-color: #f1df8a;
+  background: #fff9db;
+  color: #6b5a00;
+}
+
+.bcob-payment-status-pending .bcob-payment-status-dot,
+.bcob-payment-status-requires_payment_method .bcob-payment-status-dot,
+.bcob-payment-status-requires_confirmation .bcob-payment-status-dot,
+.bcob-payment-status-requires_action .bcob-payment-status-dot {
+  background: #d4aa00;
+}
+
+/* Empty */
+
+.bcob-payments-empty {
+  padding: 70px 30px !important;
+}
+
+.bcob-empty-state {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bcob-empty-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  background: #f3f4f5;
+  color: #646970;
+}
+
+.bcob-empty-icon i {
+  font-size: 23px;
+}
+
+.bcob-empty-state h2 {
+  margin: 0 0 7px;
+  color: #1d2327;
+  font-size: 17px;
+}
+
+.bcob-empty-state p {
+  margin: 0;
+  color: #646970;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Pagination */
+
+.bcob-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 18px;
+  border-top: 1px solid #e8e8e8;
+  background: #fafafa;
+}
+
+.bcob-pagination-summary {
+  color: #646970;
+  font-size: 12px;
+}
+
+.bcob-pagination nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bcob-page-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #dcdcde;
+  border-radius: 6px;
+  background: #fff;
+  color: #50575e;
+  text-decoration: none;
+}
+
+.bcob-page-button:hover {
+  border-color: #b4b4b4;
+  color: #2271b1;
+}
+
+.bcob-page-button.is-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.bcob-page-number {
+  min-width: 52px;
+  color: #50575e;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 782px) {
+  .bcob-page-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .bcob-payments-filters {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .bcob-search-field {
+    max-width: none;
+  }
+
+  .bcob-payments-filters select,
+  .bcob-payments-filters .button {
+    width: 100%;
+  }
+
+  .bcob-pagination {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

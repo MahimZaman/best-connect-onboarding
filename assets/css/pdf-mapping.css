@@ -1,0 +1,635 @@
+/* =========================================================
+   PDF FIELD MAPPING
+   ========================================================= */
+
+body.bcob-pdf-mapping-open {
+  overflow: hidden;
+}
+
+#bcob-pdf-mapping-modal[hidden] {
+  display: none !important;
+}
+
+.bcob-pdf-mapping-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+}
+
+.bcob-pdf-mapping-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(3px);
+}
+
+.bcob-pdf-mapping-dialog {
+  position: absolute;
+  inset: 32px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #dcdcde;
+  border-radius: 12px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.bcob-pdf-mapping-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 72px;
+  padding: 14px 20px;
+  border-bottom: 1px solid #e2e4e7;
+  background: #fff;
+}
+
+.bcob-pdf-mapping-header-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.bcob-pdf-mapping-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 40px;
+  border-radius: 10px;
+  background: #f0f0f1;
+  color: #2271b1;
+  font-size: 20px;
+}
+
+.bcob-pdf-mapping-header h2 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.bcob-pdf-mapping-contract-name {
+  margin: 3px 0 0;
+  color: #646970;
+  font-size: 12px;
+}
+
+.bcob-pdf-mapping-close {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #646970;
+  cursor: pointer;
+  border-radius: 7px;
+  font-size: 20px;
+}
+
+.bcob-pdf-mapping-close:hover {
+  background: #f0f0f1;
+  color: #1d2327;
+}
+
+/* =========================================================
+   TOOLBAR
+   ========================================================= */
+
+.bcob-pdf-mapping-toolbar {
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 7px 14px;
+  border-bottom: 1px solid #e2e4e7;
+  background: #f6f7f7;
+}
+
+.bcob-pdf-mapping-toolbar-left,
+.bcob-pdf-mapping-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.bcob-pdf-mapping-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #50575e;
+  font-size: 12px;
+}
+
+.bcob-pdf-mapping-toolbar .button {
+  min-height: 30px;
+  height: 30px;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+.bcob-pdf-mapping-zoom-value,
+.bcob-pdf-mapping-page {
+  min-width: 48px;
+  text-align: center;
+  color: #50575e;
+  font-size: 12px;
+}
+
+.bcob-pdf-mapping-toolbar-divider {
+  width: 1px;
+  height: 22px;
+  margin: 0 4px;
+  background: #dcdcde;
+}
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+.bcob-pdf-mapping-body {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 390px;
+  overflow: hidden;
+}
+
+/* =========================================================
+   PDF PREVIEW
+   ========================================================= */
+
+.bcob-pdf-mapping-preview {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+  background: #525659;
+}
+
+.bcob-pdf-mapping-canvas-wrap {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+#bcob-pdf-mapping-canvas {
+  display: block;
+  max-width: none;
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.bcob-pdf-mapping-pdf-loader {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 13px;
+  pointer-events: none;
+}
+
+.bcob-pdf-mapping-pdf-loader i {
+  font-size: 26px;
+}
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.bcob-pdf-mapping-sidebar {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-left: 1px solid #dcdcde;
+  background: #fff;
+}
+
+.bcob-pdf-mapping-sidebar-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 18px;
+  border-bottom: 1px solid #e2e4e7;
+}
+
+.bcob-pdf-mapping-sidebar-header h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.bcob-pdf-mapping-sidebar-header p {
+  margin: 5px 0 0;
+  color: #646970;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.bcob-pdf-mapping-field-count {
+  min-width: 28px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 7px;
+  border-radius: 12px;
+  background: #f0f0f1;
+  color: #50575e;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.bcob-pdf-mapping-fields {
+  flex: 1;
+  overflow: auto;
+}
+
+/* =========================================================
+   MAPPING ROW
+   ========================================================= */
+
+.bcob-pdf-mapping-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1.15fr);
+  align-items: center;
+  gap: 9px;
+  padding: 13px 14px;
+  border-bottom: 1px solid #f0f0f1;
+}
+
+.bcob-pdf-mapping-row:hover {
+  background: #fafafa;
+}
+
+.bcob-pdf-mapping-field-info {
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.bcob-pdf-mapping-field-icon {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  background: #f0f0f1;
+  color: #50575e;
+  font-size: 15px;
+}
+
+.bcob-pdf-mapping-field-details {
+  min-width: 0;
+}
+
+.bcob-pdf-mapping-field-details strong {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #1d2327;
+  font-size: 12px;
+}
+
+.bcob-pdf-mapping-field-details > span {
+  display: block;
+  margin-top: 2px;
+  color: #646970;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.bcob-pdf-mapping-options {
+  display: block;
+  margin-top: 5px;
+  color: #646970;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.bcob-pdf-mapping-options span {
+  display: inline-block;
+  margin: 2px 2px 0 0;
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: #f0f0f1;
+}
+
+.bcob-pdf-mapping-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8c8f94;
+}
+
+.bcob-pdf-mapping-form-control {
+  min-width: 0;
+}
+
+.bcob-pdf-mapping-form-field {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  font-size: 11px;
+}
+
+/* =========================================================
+   EMPTY / ERROR / LOADING
+   ========================================================= */
+
+.bcob-pdf-mapping-empty,
+.bcob-pdf-mapping-error,
+.bcob-pdf-mapping-loading {
+  min-height: 180px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 7px;
+  color: #646970;
+}
+
+.bcob-pdf-mapping-empty i,
+.bcob-pdf-mapping-error i {
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+.bcob-pdf-mapping-empty strong,
+.bcob-pdf-mapping-error strong {
+  color: #1d2327;
+  font-size: 13px;
+}
+
+.bcob-pdf-mapping-empty span,
+.bcob-pdf-mapping-error span {
+  max-width: 280px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.bcob-pdf-mapping-footer {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 18px;
+  border-top: 1px solid #dcdcde;
+  background: #fff;
+}
+
+.bcob-pdf-mapping-summary {
+  color: #646970;
+  font-size: 12px;
+}
+
+.bcob-pdf-mapping-footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bcob-pdf-mapping-footer .button {
+  min-height: 34px;
+}
+
+.bcob-pdf-mapping-footer .button-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bcob-pdf-mapping-special {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.bcob-pdf-mapping-special label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bcob-pdf-mapping-special label > span,
+.bcob-pdf-mapping-pdf-values span {
+  font-size: 11px;
+  font-weight: 600;
+  color: #646970;
+}
+
+.bcob-pdf-mapping-pdf-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.bcob-pdf-mapping-pdf-values > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 10px;
+  border: 1px solid #e2e4e7;
+  border-radius: 6px;
+  background: #f6f7f7;
+}
+
+.bcob-pdf-mapping-pdf-values code {
+  font-size: 12px;
+}
+
+.bcob-pdf-radio-map {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bcob-pdf-radio-map-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #646970;
+  padding-bottom: 3px;
+}
+
+.bcob-pdf-radio-map-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+}
+
+.bcob-pdf-radio-pdf-value {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.bcob-pdf-radio-pdf-value code {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bcob-pdf-radio-map-row > i {
+  color: #8c8f94;
+}
+
+.bcob-pdf-radio-map-value {
+  width: 100%;
+}
+
+.bcob-pdf-mapping-field-overlay-layer {
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.bcob-pdf-mapping-field-overlay {
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px solid rgba(34, 113, 177, 0.65);
+  background: rgba(34, 113, 177, 0.08);
+  pointer-events: none;
+}
+
+.bcob-pdf-mapping-field-overlay-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-100%);
+  max-width: 260px;
+  padding: 3px 7px;
+  border-radius: 4px 4px 0 0;
+  background: #2271b1;
+  color: #fff;
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bcob-contract-mapping-count {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 8px;
+  padding: 5px 10px;
+  border: 1px solid #dcdcde;
+  border-radius: 999px;
+  background: #f6f7f7;
+  color: #50575e;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: all 0.18s ease;
+}
+
+.bcob-contract-mapping-count:hover {
+  border-color: #c3c4c7;
+  background: #fff;
+  color: #1d2327;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+}
+
+.bcob-contract-mapping-count:before {
+  content: "\e9d5";
+  margin-right: 5px;
+  font-family: "remixicon";
+  font-size: 12px;
+  line-height: 1;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media screen and (max-width: 1100px) {
+  .bcob-pdf-mapping-dialog {
+    inset: 20px;
+  }
+
+  .bcob-pdf-mapping-body {
+    grid-template-columns: minmax(0, 1fr) 340px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bcob-pdf-mapping-dialog {
+    inset: 10px;
+  }
+
+  .bcob-pdf-mapping-body {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, 1fr) 350px;
+  }
+
+  .bcob-pdf-mapping-sidebar {
+    border-left: 0;
+    border-top: 1px solid #dcdcde;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bcob-pdf-mapping-dialog {
+    inset: 0;
+    border-radius: 0;
+  }
+
+  .bcob-pdf-mapping-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .bcob-pdf-mapping-toolbar-right {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .bcob-pdf-mapping-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .bcob-pdf-mapping-footer-actions {
+    justify-content: flex-end;
+  }
+}

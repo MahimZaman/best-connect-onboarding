@@ -1,0 +1,591 @@
+/* ==========================================================
+   BCOB CONFIRMATION
+   PART 1
+========================================================== */
+
+.bcob-confirmation {
+  max-width: 720px;
+  margin: 35px auto;
+  background: #fff;
+  border: 1px solid #dddddd;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  font-family: "Figtree", sans-serif;
+}
+
+.bcob-confirmation__topbar {
+  height: 5px;
+  background: #ff6500;
+}
+
+.bcob-confirmation__inner {
+  padding: 32px 48px;
+}
+
+.bcob-form-container:has(.bcob-confirmation-email),
+.bcob-form-container:has(.bcob-confirm-membership) {
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+.bcob-confirm-membership {
+  font-family: "Figtree", sans-serif;
+}
+
+.bcob-confirmation__icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 28px;
+  border-radius: 12px;
+  background: linear-gradient(130.01deg, #f4fafd 0%, #e0f4fc 70.97%);
+  display: flex;
+  justify-content: center;
+  border: 0.5px solid #d8ebf7;
+  box-shadow: 0px -1.17px 1.17px 0px #96a1ac1f inset;
+  align-items: center;
+}
+
+.bcob-confirmation__icon img {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.bcob-confirmation__title,
+.bcob-success__title {
+  margin: 0;
+  text-align: center;
+  font-size: 33px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #000000;
+  line-height: 1.15;
+  font-family: "Figtree", sans-serif;
+}
+
+.bcob-confirmation__description,
+.bcob-success__subtitle {
+  max-width: 100%;
+  margin: 12px auto 28px;
+  text-align: center;
+  color: #5a5a62;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Figtree", sans-serif;
+}
+
+.bcob-confirmation__description a {
+  color: #777;
+  text-decoration: underline;
+}
+
+.bcob-confirmation__description strong {
+  color: #333;
+  font-weight: 700;
+}
+
+/* ==========================================================
+   EMAIL PREVIEW
+========================================================== */
+
+.bcob-email-preview {
+  background: #e0f4fc;
+  border: 1px solid #e6e3dd;
+  border-radius: 16px;
+  padding: 20px 22px 22px;
+  position: relative;
+  margin-bottom: 28px;
+  box-shadow:
+    0px 1px 2px 0px #0b0b0d0a,
+    0px 2px 8px 0px #0b0b0d0a;
+}
+
+.bcob-email-preview__caption {
+  text-align: center;
+  font-size: 13px;
+  color: #000;
+  margin-bottom: 18px;
+  line-height: 17px;
+}
+
+.bcob-email-preview__content {
+  position: relative;
+  overflow: hidden;
+  min-height: 250px;
+}
+
+.bcob-email-preview__watermark {
+  position: absolute;
+  left: 52%;
+  top: 53%;
+  transform: translate(-50%, -50%) rotate(-14deg);
+  font-size: 70px;
+  line-height: 0.9;
+  font-weight: 900;
+  color: rgba(70, 80, 90, 0.18);
+  text-align: center;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* ==========================================================
+   EMAIL HEADER
+========================================================== */
+
+.bcob-email-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.bcob-email-header__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #1997df;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.bcob-email-header__name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #5a5a62;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+.bcob-email-header__mail {
+  font-size: 13px;
+  color: #5a5a62;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+/* ==========================================================
+   EMAIL BODY
+========================================================== */
+
+.bcob-email-title {
+  margin: 14px 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #5a5a62;
+  position: relative;
+  z-index: 2;
+  line-height: 22px;
+}
+
+.bcob-email-text {
+  margin: 0 0 20px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+  position: relative;
+  z-index: 2;
+}
+
+.bcob-email-button span {
+  font-size: 22px;
+  line-height: 1;
+}
+
+/* ==========================================================
+   CONTENT BOXES
+========================================================== */
+
+.bcob-box {
+  background: #faf8f5;
+  border: 1px solid #e6e3dd;
+  border-radius: 16px;
+  padding: 18px 22px;
+  margin-bottom: 28px;
+}
+
+.bcob-box h3 {
+  margin: 0 0 14px;
+  color: #111;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.bcob-box p {
+  margin: 0;
+  color: #5b5b5b;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.bcob-box__buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+/* ==========================================================
+   OUTLINE BUTTONS
+========================================================== */
+
+.bcob-outline-button {
+  height: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 32px;
+  border: 1.5px solid #9c9890;
+  border-radius: 999px;
+  background: #fff;
+  color: #000;
+  text-decoration: none !important;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.2s;
+  gap: 5px;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.bcob-outline-button:hover {
+  border-color: #ff7a17;
+  color: #ff7a17;
+  background: #fff8f3;
+}
+
+.bcob-outline-button--single {
+  margin-top: 22px;
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.bcob-footer {
+  margin-top: 34px;
+  padding-top: 26px;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bcob-footer__save {
+  font-size: 14px;
+  font-weight: 700;
+  color: #5a5a62;
+  transition: 0.2s;
+  line-height: 18px;
+}
+
+.bcob-footer__save:hover {
+  color: #ff7a17;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 768px) {
+  .bcob-confirmation {
+    margin: 20px;
+  }
+
+  .bcob-confirmation__inner {
+    padding: 24px;
+  }
+
+  .bcob-confirmation__title {
+    font-size: 24px;
+  }
+
+  .bcob-confirmation__description {
+    font-size: 15px;
+  }
+
+  .bcob-email-preview__watermark {
+    font-size: 68px;
+  }
+
+  .bcob-box {
+    padding: 22px;
+  }
+
+  .bcob-box__buttons {
+    flex-direction: column;
+  }
+
+  .bcob-outline-button {
+    width: 100%;
+  }
+
+  .bcob-email-button {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .bcob-footer {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+
+/* Final membership confirmation */
+
+/* ==========================================================
+   SUCCESS PAGE
+========================================================== */
+
+.bcob-success {
+  max-width: 760px;
+  margin: 40px auto;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.08);
+  font-family: Inter, sans-serif;
+  color: #1e1e1e;
+}
+
+.bcob-success__topbar {
+  height: 5px;
+  background: #ff6b00;
+}
+
+.bcob-success__body {
+  padding: 24px 38px 46px;
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.bcob-success__icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 28px;
+  border: 1px solid #d8ebf7;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(130.01deg, #f4fafd 0%, #e0f4fc 70.97%);
+  box-shadow: 0px -1.17px 1.17px 0px #96a1ac1f inset;
+}
+
+.bcob-success__icon svg {
+  display: block;
+}
+
+/* ==========================================================
+   SUMMARY
+========================================================== */
+
+.bcob-summary {
+  border: 1px solid #e6e3dd;
+  border-radius: 16px;
+  padding: 20px 22px 8px;
+  margin-bottom: 28px;
+  background: #faf8f5;
+  margin-top: 3px;
+}
+
+.bcob-summary__row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 12px;
+  margin-top: 0 !important;
+  font-family: "Figtree", sans-serif;
+}
+
+.bcob-summary__label {
+  color: #5a5a62;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.bcob-summary__value {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+  line-height: 1.5;
+}
+
+div.blue-notice {
+  background: linear-gradient(180deg, #ffffff 0%, #e0f4fc 100%);
+  border: 1px solid #009fdf33;
+  padding-top: 14px;
+  padding-right: 16px;
+  padding-bottom: 14px;
+  padding-left: 19px;
+  border-radius: 16px;
+  border-left: 3px solid #009fdf;
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #2a2a2e;
+}
+
+/* ==========================================================
+   INFO BOX
+========================================================== */
+
+.bcob-info {
+  background: linear-gradient(90deg, #f7fcff 0%, #ddf3ff 100%);
+  border: 1px solid #bfe5fa;
+  border-left: 4px solid #1d9de3;
+  border-radius: 14px;
+  padding: 18px 18px 18px 14px;
+}
+
+.bcob-info__title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.bcob-info__list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.bcob-info__list li {
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.bcob-info__list li:last-child {
+  margin-bottom: 0;
+}
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+.bcob-success__actions {
+  text-align: center;
+  margin-top: 26px;
+}
+
+.bcob-btn-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 48px;
+  padding: 0 24px;
+  border: 1px solid #979797;
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.bcob-btn-back:hover {
+  border-color: #ff6b00;
+  color: #ff6b00;
+}
+
+.bcob-btn-back svg {
+  flex-shrink: 0;
+}
+
+a.bcob-email-button {
+  text-decoration: none !important;
+  color: #2a2a2e;
+  font-size: 16px;
+  line-height: 1.45;
+  background: linear-gradient(180deg, #ff852e 0%, #ff6b00 100%);
+  padding: 14px 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 999px;
+  z-index: 2;
+  transition: 0.2s;
+  font-weight: 700;
+}
+
+ol.bcob-info__list {
+  margin: 0;
+}
+
+.bcob-info__list li {
+  margin-bottom: 0;
+  color: #2a2a2e;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 768px) {
+  .bcob-success {
+    margin: 20px;
+  }
+
+  .bcob-success__body {
+    padding: 24px;
+  }
+
+  .bcob-success__title {
+    font-size: 24px;
+  }
+
+  .bcob-success__subtitle {
+    font-size: 15px;
+  }
+
+  .bcob-summary {
+    padding: 8px 16px;
+  }
+
+  .bcob-summary__row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 12px 0;
+  }
+
+  .bcob-summary__value {
+    text-align: left;
+  }
+
+  .bcob-info {
+    padding: 16px;
+  }
+
+  .bcob-info__list li {
+    font-size: 14px;
+  }
+
+  .bcob-btn-back {
+    width: 100%;
+  }
+}

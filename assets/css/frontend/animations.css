@@ -1,0 +1,173 @@
+@keyframes bcobFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bcobSlideUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: none;
+  }
+}
+
+@keyframes bcobSlideLeft {
+  from {
+    opacity: 0;
+
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: none;
+  }
+}
+
+@keyframes bcobSlideRight {
+  from {
+    opacity: 0;
+
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: none;
+  }
+}
+
+@keyframes bcobScale {
+  from {
+    opacity: 0;
+
+    transform: scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1);
+  }
+}
+
+@keyframes bcobShake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-6px);
+  }
+
+  40% {
+    transform: translateX(6px);
+  }
+
+  60% {
+    transform: translateX(-4px);
+  }
+
+  80% {
+    transform: translateX(4px);
+  }
+}
+
+.bcob-fade {
+  animation: bcobFadeIn 0.3s ease;
+}
+
+.bcob-slide-up {
+  animation: bcobSlideUp 0.35s ease;
+}
+
+.bcob-slide-left {
+  animation: bcobSlideLeft 0.35s ease;
+}
+
+.bcob-slide-right {
+  animation: bcobSlideRight 0.35s ease;
+}
+
+.bcob-scale {
+  animation: bcobScale 0.3s ease;
+}
+
+.bcob-invalid {
+  animation: bcobShake 0.35s ease;
+}
+
+.bcob-step-enter {
+  animation: bcobSlideUp 0.35s ease forwards;
+}
+
+.bcob-widget {
+  animation: bcobFadeIn 0.35s ease;
+}
+
+.bcob-btn {
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.bcob-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.bcob-btn:active {
+  transform: translateY(0);
+}
+
+.bcob-upload-item {
+  animation: bcobScale 0.25s ease;
+}
+
+.bcob--loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  gap: 16px;
+}
+
+.bcob-loader__spinner {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #e6e3dd;
+  border-top-color: #ff6b00;
+  border-radius: 50%;
+  animation: bcob-spin 0.8s linear infinite;
+}
+
+.bcob-loader__text {
+  font-size: 15px;
+  font-weight: 500;
+  color: #666;
+}
+
+@keyframes bcob-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
